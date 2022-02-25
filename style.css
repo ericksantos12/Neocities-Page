@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Source+Sans+Pro&display=swap');
+
+html,
+body {
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyavIWnmtoQq2fnrBYXum2h92pj6RQKHpTow&usqp=CAU);
+    color: rgb(255, 0, 0);
+}
+
+h1 {
+    font-family: 'Redressed', cursive;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    ;
+}
+
+h2 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+    margin: auto;
+    width: 630px;
+    border: 1px solid rgb(255, 0, 0);
+    box-shadow: 5px 5px 0px 0px #000000;
+    padding: 0px 10px 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+.links {
+    height: 125px;
+}
