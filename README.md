@@ -1,2 +1,7 @@
-# my-neocities-webpage
- Pagina criada com o intuito de deixar o meu cantinho no Neocities
+# Neocities Webpage
+
+## Contextualização
+[Neocities](https://neocities.org) é um serviço de hospedagem de sites gratuito, sem anúncios e de alta perfomance. Inspirado no antigo [GeoCities](https://pt.wikipedia.org/wiki/Yahoo!_GeoCities), ele encoraja que os usuários criem seus sites do jeito que quiserem e com seus próprios toques.
+
+## O site
+Este site foi criado com o intuito de ter um cantinho nesta comunidade, e também adquirir aprendizados sobre HTML e CSS
