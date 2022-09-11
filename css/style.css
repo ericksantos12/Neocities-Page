@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Source+Sans+Pro&display=swap');
+
+/* Body and Main Content */
+html,
+body {
+    text-align: center;
+    background-image: url("/assets/cool_background.gif");
+    background-attachment: fixed;
+    background-size: 25em;
+    color: rgb(255, 0, 0);
+}
+
+h1 {
+    font-family: 'Redressed', cursive;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Navbar */
+
+nav {
+    text-align: left;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-top: 0.3em;
+    padding: 0.5em;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+.disabled {
+    color: rgb(139, 0, 0);
+    pointer-events: none;
+}
+
+/* Others */
+.main-border {
+    margin: auto;
+    max-width: 630px;
+    border: 1px solid rgb(255, 0, 0);
+    box-shadow: 5px 5px #000000;
+    padding: 0px 10px 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.height125 {
+    height: 125px;
+}
+
+.title {
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+}
+
+footer {
+    margin: 40px;
+}
