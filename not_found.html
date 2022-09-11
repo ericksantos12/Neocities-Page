@@ -1,17 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOOB</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-    <h1>PAGE NOT FOUND</h1>
-    <img src=https://files.catbox.moe/1qtkqt.jpg width=500 height=500>
-    <br>
-    <br>
-    <br>
-    <h5><a href=https://ericksantos12.neocities.org/>back to home</a></h5>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found</title>
+</head>
+<body>
+  <!-- Audio -->
+  <audio autoplay id="bg" src="https://cdn.discordapp.com/attachments/773512975788408842/1018603592598441995/majin.m4a" type="audio/mpeg"> your browser doesn't support audio :( </audio>
+  <script> 
+      var audio = document.getElementById("bg"); 
+      audio.volume = 0.05; 
+  </script>
+
+  <div class="align">
+    <h1>ページが見つかりません</h1>
+    <p> <a href="index.html">go back</a> </p>
+  </div>
+
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+
+  body {
+    background-image: url(assets/majin.png);
+    background-size: 8em;
+  }
+
+  h1{
+    font-family: 'Klee One', cursive;
+    color: white;
+    margin-bottom: -10px;
+    font-size: 5.5em;
+  }
+
+  p{
+    font-size: 1.5em;
+    text-align: right;
+    margin-right: 25vw;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .align {
+    text-align: center;
+    margin: 35vh 0 35vh 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 3em;
+    }
+  }
+</style>
 </html>
