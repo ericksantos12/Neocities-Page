@@ -74,6 +74,11 @@ a {
     margin-bottom: 0.75em;
 }
 
+.spotifyembed {
+    height: auto;
+    width: 60%;
+}
+
 footer {
     margin: 40px;
 }
@@ -94,5 +99,9 @@ footer {
     .evensmol {
         height: auto;
         width: 20vw;
+    }
+    .spotifyembed {
+        height: auto;
+        width: 100%;
     }
 }
