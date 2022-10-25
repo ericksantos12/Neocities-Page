@@ -15,11 +15,7 @@ h1 {
     font-size: 40px;
 }
 
-p {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-h2 {
+p, h2, h3{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -77,6 +73,19 @@ a {
 .spotifyembed {
     height: auto;
     width: 60%;
+}
+
+.spotifyembed::before{
+    content: 'epic embed fail';
+}
+
+/* Specs at about */
+.specs {
+    padding: 0 10% 0 10%;
+}
+
+.specs p{
+    text-align: left;
 }
 
 footer {
