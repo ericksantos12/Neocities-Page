@@ -81,7 +81,8 @@ a {
 
 /* Specs at about */
 .specs {
-    padding: 0 10% 0 10%;
+    padding: 0 20% 0 20%;
+    margin-top: 30px;
 }
 
 .specs p{
@@ -112,5 +113,8 @@ footer {
     .spotifyembed {
         height: auto;
         width: 100%;
+    }
+    .specs {
+        padding: 0 10% 0 10%;
     }
 }
