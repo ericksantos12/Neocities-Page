@@ -11,9 +11,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@v1
+    - name: Deploy to Neocities
+      uses: jonchang/deploy-neocities@v1
       with:
-        api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-        cleanup: false
-        dist_dir: ./
+        key: ${{ secrets.NEOCITIES_API_KEY }}
+        dir: ./
+        clean: false
