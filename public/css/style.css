@@ -55,7 +55,7 @@ h1 {
     color: var(--text-hover);
 }
 
-.disabled {
+.nav-link[aria-current="page"] {
     color: rgb(139, 0, 0);
     pointer-events: none;
 }
