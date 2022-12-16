@@ -88,7 +88,7 @@ h1 {
     content: 'epic embed fail';
 }
 
-/* Specs at about */
+/* About -> specs */
 .specs {
     padding: 0 20% 0 20%;
     margin-top: 30px;
@@ -98,18 +98,20 @@ h1 {
     text-align: left;
 }
 
-/* About links */
-.tracklist-link {
+/* About and cool links -> links */
+.tracklist-link, .cool-link {
     color: var(--text-color);
 }
 
-.tracklist-link:hover {
+.tracklist-link:hover, .cool-link:hover {
     color: var(--text-hover);
 }
 
 footer {
     margin: 40px;
 }
+
+/* Cool links -> links */
 
 @media only screen and (max-width: 600px) {
     .logo {
