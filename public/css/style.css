@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Source+Sans+Pro&display=swap');
 
+:root {
+    --primary-color: red;
+    --secondary-color: black;
+    --text-color: var(--primary-color);
+    --text-hover: rgb(180, 0, 0);
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* Body and Main Content */
 html,
 body {
     text-align: center;
-    background-image: url("/assets/cool_background.gif");
+    background-image: url("../assets/cool_background.gif");
     background-attachment: fixed;
     background-size: 25em;
-    color: rgb(255, 0, 0);
+    color: var(--primary-color)
 }
 
 h1 {
     font-family: 'Redressed', cursive;
     font-size: 40px;
-}
-
-p, h2, h3{
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Navbar */
@@ -42,8 +47,12 @@ p, h2, h3{
 }
 
 .nav-link {
-    color: red;
+    color: var(--text-color);
     text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--text-hover);
 }
 
 .disabled {
@@ -55,10 +64,10 @@ p, h2, h3{
 .main-border {
     margin: auto;
     max-width: 630px;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid var(--primary-color);
     box-shadow: 5px 5px #000000;
     padding: 0px 10px 10px;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--secondary-color);
 }
 
 .height125 {
@@ -89,6 +98,15 @@ p, h2, h3{
     text-align: left;
 }
 
+/* About links */
+.tracklist-link {
+    color: var(--text-color);
+}
+
+.tracklist-link:hover {
+    color: var(--text-hover);
+}
+
 footer {
     margin: 40px;
 }
@@ -98,23 +116,11 @@ footer {
         height: auto;
         width: 100%;
     }
-    .welcome {
-        height: auto;
-        width: 80vw;
-    }
-    .smol {
-        height: auto;
-        width: 35vw;
-    }
-    .evensmol {
-        height: auto;
-        width: 20vw;
-    }
     .spotifyembed {
         height: auto;
         width: 100%;
     }
     .specs {
-        padding: 0 10% 0 10%;
+        padding: 0 10%;
     }
 }
