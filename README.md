@@ -1,6 +1,8 @@
 <h1 align="center">🐱 Neocities-Page 🐱</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-2.2.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/ericksantos12/Neocities-Page/actions/workflows/neocities.yml">
+    <img src="https://github.com/ericksantos12/Neocities-Page/actions/workflows/neocities.yml/badge.svg" alt="Gitmoji Changelog">
+  </a>
   <a href="https://gitmoji.dev">
     <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
   </a>
