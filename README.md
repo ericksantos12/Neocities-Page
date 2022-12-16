@@ -1,6 +1,12 @@
 <h1 align="center">🐱 Neocities-Page 🐱</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-2.2.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://gitmoji.dev">
+    <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+  </a>
+  <a href="https://github.com/frinyvonnick/gitmoji-changelog">
+    <img src="https://img.shields.io/badge/Changelog-gitmoji-brightgreen.svg" alt="Gitmoji Changelog">
+  </a>
   <a href="https://twitter.com/ErickSantosS12" target="_blank">
     <img alt="Twitter: ErickSantosS12" src="https://img.shields.io/twitter/follow/ErickSantosS12.svg?style=social" />
   </a>
