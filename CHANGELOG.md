@@ -1,5 +1,32 @@
 # Changelog
 
+<a name="2.2.1"></a>
+## 2.2.1 (2022-12-16)
+
+### Changed
+
+- 💄 style files small cleanup [[a94621a](https://github.com/ericksantos12/Neocities-Page/commit/a94621aed0ebd3fd9080baae71e79bebea4d9826)]
+- 🚚 moved html to public folder + corrections [[e3fe7e0](https://github.com/ericksantos12/Neocities-Page/commit/e3fe7e0242ab10daa30fa128143e8e2b472336bb)]
+- 🚚 moved assets to public folder [[3a5685e](https://github.com/ericksantos12/Neocities-Page/commit/3a5685e3259c342f929170a360d6b79c78187a13)]
+- 🚚 renamed deploy.yml to neocities.yml [[ca618eb](https://github.com/ericksantos12/Neocities-Page/commit/ca618ebd38a49f5f8098a3cd6fd1972b28befb46)]
+- 💄 better navbar structure [[9410e83](https://github.com/ericksantos12/Neocities-Page/commit/9410e83996e651dd74230399cf4bb960643513e7)]
+- 💄 better class names [[fa43957](https://github.com/ericksantos12/Neocities-Page/commit/fa43957fc6c19da1188d3c5c3efbd42ab1e6fa94)]
+
+### Removed
+
+- 🔥 deleted changelogrc [[3abc1fc](https://github.com/ericksantos12/Neocities-Page/commit/3abc1fcaaaa663fce990ad8d503cc0fe5132c8c4)]
+
+### Miscellaneous
+
+- 📝 update readme [[2d1f3ec](https://github.com/ericksantos12/Neocities-Page/commit/2d1f3ec4fcf3fe5dbc38bc049e8a5d45722ba943)]
+-  👷 update cd script [[58001a0](https://github.com/ericksantos12/Neocities-Page/commit/58001a0b2b4f0d2e40daa198f732e2bbcb63a672)]
+- 🙈 added gitignore [[d7a8f68](https://github.com/ericksantos12/Neocities-Page/commit/d7a8f68fc57fc76e4f373a3f1dd32de3e663837e)]
+-  👷 fixed token [[f774bca](https://github.com/ericksantos12/Neocities-Page/commit/f774bca9e09ac433a64c64902ef05d00e6148bdb)]
+-  👷 updated cd action [[7479ea6](https://github.com/ericksantos12/Neocities-Page/commit/7479ea65bf4e67eabfb55e49b3657d9a1e3b2984)]
+-  👷 added deploy action [[535afa4](https://github.com/ericksantos12/Neocities-Page/commit/535afa43f6ea7ee3f105e0752e8c1149bfa8d3c5)]
+- 📝 remake do readme [[a1b18cd](https://github.com/ericksantos12/Neocities-Page/commit/a1b18cdc9be3ee883181d2ce0fb9fa2249387ae4)]
+
+
 <a name="2.2.0"></a>
 ## 2.2.0 (2022-11-07)
 
