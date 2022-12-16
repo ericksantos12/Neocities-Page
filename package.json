@@ -1,0 +1,21 @@
+{
+  "name": "neocities-page",
+  "version": "2.2.1",
+  "description": "Este site foi criado com o intuito de ter um cantinho nesta comunidade, e também adquirir aprendizados sobre HTML e CSS",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericksantos12/Neocities-Page.git"
+  },
+  "keywords": [],
+  "author": "Erick Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericksantos12/Neocities-Page/issues"
+  },
+  "homepage": "https://github.com/ericksantos12/Neocities-Page#readme",
+  "devDependencies": {
+    "htmlhint": "^1.1.4"
+  }
+}
