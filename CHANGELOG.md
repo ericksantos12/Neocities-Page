@@ -1,5 +1,27 @@
 # Changelog
 
+<a name="next"></a>
+## next
+
+### Added
+
+- ✨ auto nav highlight and music adjust [[cf17e01](https://github.com/ericksantos12/Neocities-Page/commit/cf17e01e18db1b55482063ad8413b4b11405aeef)]
+
+### Changed
+
+- 💄 mari page rework, added slideshow [[02165ad](https://github.com/ericksantos12/Neocities-Page/commit/02165ad2cb2ca3c1f99af5ce48929b2688b0e89a)]
+- 💄 updated style to work with auto nav highlight [[5dd809e](https://github.com/ericksantos12/Neocities-Page/commit/5dd809e53d8813d213e5be751b7ae4ce80e552ee)]
+- 🎨 changed audio volume control to separated file [[343c4bd](https://github.com/ericksantos12/Neocities-Page/commit/343c4bd5b3e0e9d2c6fd1e4e1adc6b6675c849e0)]
+- 🎨 removed hard-coded nav-link highlight [[ca6c37b](https://github.com/ericksantos12/Neocities-Page/commit/ca6c37b7682957146a37191ededfb4bd4166d767)]
+- 💄 better cool links styling [[432ece5](https://github.com/ericksantos12/Neocities-Page/commit/432ece5c91dc38d3cfc9dc0a84fa379f8170baeb)]
+
+### Miscellaneous
+
+- 🙈 update gitignore [[20d43d9](https://github.com/ericksantos12/Neocities-Page/commit/20d43d99f724639f5b34ce92c81ce53abc35f65c)]
+- 📝 update readme [[7c2cfdd](https://github.com/ericksantos12/Neocities-Page/commit/7c2cfdd97f45745004576611720f74a5b64059a3)]
+-  👷 workflow fix [[8da8d12](https://github.com/ericksantos12/Neocities-Page/commit/8da8d124adf1a67fc2c9fea9899a565100033c84)]
+
+
 <a name="2.2.1"></a>
 ## 2.2.1 (2022-12-16)
 
