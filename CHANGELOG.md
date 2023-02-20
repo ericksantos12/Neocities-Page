@@ -7,21 +7,27 @@
 
 - ✨ added generate-changelog workflow [[006c8c9](https://github.com/ericksantos12/Neocities-Page/commit/006c8c911a22c7a9e5365c4d3eed53912962e22d)]
 - 📈 added goatcounter [[8e91c02](https://github.com/ericksantos12/Neocities-Page/commit/8e91c0299992d661c72fd73feeaf8865754bfd3f)]
-- 📈 added goatcounter [[196dee8](https://github.com/ericksantos12/Neocities-Page/commit/196dee8129c81c8421122366c08e1459ae89b587)]
+    * 📈 added goatcounter ([196dee8](https://github.com/ericksantos12/Neocities-Page/commit/196dee8129c81c8421122366c08e1459ae89b587))
+
+### Changed
+
+- ⬆️ Bump actions/checkout from 1 to 3 [[ba674e0](https://github.com/ericksantos12/Neocities-Page/commit/ba674e0772634b8fb94543262631fa5949b92a26)]
+- 🔧 update &#x60;generate-changelog&#x60; configs [[a43c28d](https://github.com/ericksantos12/Neocities-Page/commit/a43c28dd9e1d68ce597050cf4730a521aab2efd0)]
 
 ### Miscellaneous
 
-- 📝 Update CHANGELOG [[c9c4484](https://github.com/ericksantos12/Neocities-Page/commit/c9c4484466bb43168a917c839e293c1d6f39c5dd)]
-- 📝 Update CHANGELOG [[ad19dca](https://github.com/ericksantos12/Neocities-Page/commit/ad19dca4d074a1cfeefc582566b35a750c10fdb3)]
+- 📝 Update CHANGELOG [[13c49c8](https://github.com/ericksantos12/Neocities-Page/commit/13c49c8bb05bb1b0b46b1dc35f8a5037e08d15a5)]
+    * 📝 Update CHANGELOG ([c9c4484](https://github.com/ericksantos12/Neocities-Page/commit/c9c4484466bb43168a917c839e293c1d6f39c5dd))
+    * 📝 Update CHANGELOG ([ad19dca](https://github.com/ericksantos12/Neocities-Page/commit/ad19dca4d074a1cfeefc582566b35a750c10fdb3))
 - 📝 update changelog for testing [[d6a754b](https://github.com/ericksantos12/Neocities-Page/commit/d6a754bdd6c847ed7e605f36c392f6fa40f6a9b9)]
 -  Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page [[b1fb361](https://github.com/ericksantos12/Neocities-Page/commit/b1fb36108e1bd5bff9d4c34821bc0a0c132926bb)]
+    *  Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page ([6a72646](https://github.com/ericksantos12/Neocities-Page/commit/6a72646082a08ac150e2dbec71592838638ade7e))
+    * 🔀 Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page ([f9555b1](https://github.com/ericksantos12/Neocities-Page/commit/f9555b1c43e4146adb2503a4499c54413b4d4b82))
 - 🩹 removed comment tag from commentbox [[a8c9e15](https://github.com/ericksantos12/Neocities-Page/commit/a8c9e15eb2e0585199d633597c1bbdefcca064a5)]
 -  👷 update neocities.yml [[178663f](https://github.com/ericksantos12/Neocities-Page/commit/178663feb4962f8d7c35bc4f1f508ab17c371154)]
 -  [ImgBot] Optimize images [[1fd30a0](https://github.com/ericksantos12/Neocities-Page/commit/1fd30a05ca854430366bede8097cda22e5476123)]
 - 📝 fixed changelog [[23f4552](https://github.com/ericksantos12/Neocities-Page/commit/23f4552b34a46f0e2bf9358105d224ebc2343078)]
--  Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page [[6a72646](https://github.com/ericksantos12/Neocities-Page/commit/6a72646082a08ac150e2dbec71592838638ade7e)]
 -  Merge pull request [#1](https://github.com/ericksantos12/Neocities-Page/issues/1) from ericksantos12/imgbot [[fda9681](https://github.com/ericksantos12/Neocities-Page/commit/fda9681e1fd328d63ff143aa8bc4ad480e94ff73)]
-- 🔀 Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page [[f9555b1](https://github.com/ericksantos12/Neocities-Page/commit/f9555b1c43e4146adb2503a4499c54413b4d4b82)]
 
 
 <a name="2.3.0"></a>
