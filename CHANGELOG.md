@@ -1,36 +1,5 @@
 # Changelog
 
-<a name="2.3.0"></a>
-## 2.3.0 (2022-12-19)
-
-### Added
-
-- ✨ new mari imgs to gallery [[f09c66f](https://github.com/ericksantos12/Neocities-Page/commit/f09c66f4ee9b7b2b15beba67c74b60c10b104f78)]
-- ✨ auto nav highlight and music adjust [[29629ee](https://github.com/ericksantos12/Neocities-Page/commit/29629eef6c4b697243b36b8e3656455f4b2e409c)]
-
-### Changed
-
-- 💄 mari page rework, added slideshow [[7622c7f](https://github.com/ericksantos12/Neocities-Page/commit/7622c7fcf51732007a0f273cf628749382f849c7)]
-- 💄 updated style to work with auto nav highlight [[5dd809e](https://github.com/ericksantos12/Neocities-Page/commit/5dd809e53d8813d213e5be751b7ae4ce80e552ee)]
-- 🎨 changed audio volume control to separated file [[343c4bd](https://github.com/ericksantos12/Neocities-Page/commit/343c4bd5b3e0e9d2c6fd1e4e1adc6b6675c849e0)]
-- 🎨 removed hard-coded nav-link highlight [[ca6c37b](https://github.com/ericksantos12/Neocities-Page/commit/ca6c37b7682957146a37191ededfb4bd4166d767)]
-- 💄 better cool links styling [[432ece5](https://github.com/ericksantos12/Neocities-Page/commit/432ece5c91dc38d3cfc9dc0a84fa379f8170baeb)]
-
-### Removed
-
-- 🔥 drop mari assets [[a6e54f0](https://github.com/ericksantos12/Neocities-Page/commit/a6e54f05f30dace6798d87b12b5ed0fbf1ae0eff)]
-- 🔥 deleted changelogrc [[583c024](https://github.com/ericksantos12/Neocities-Page/commit/583c024298d9fda72182787a0e17f924987b18c9)]
-
-### Fixed
-
-- 💚 workflow fix [[bb2da83](https://github.com/ericksantos12/Neocities-Page/commit/bb2da83d9e1ce896103709ef8476cc3dd8822959)]
-
-### Miscellaneous
-
-- 🔀 Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page [[62e40b1](https://github.com/ericksantos12/Neocities-Page/commit/62e40b1ba1803cd065e93c77ae3df3183e93fc03)]
-- 📝 update changelog [[e99f724](https://github.com/ericksantos12/Neocities-Page/commit/e99f7245a6cbd664c54b319b1dfec9e4a1cfa8f6)]
-- 🙈 update gitignore [[b68e8a6](https://github.com/ericksantos12/Neocities-Page/commit/b68e8a6f786ad0e7f8ef1da43f6040acc28bd2b1)]
-
 <a name="2.2.1"></a>
 ## 2.2.1 (2022-12-16)
 
