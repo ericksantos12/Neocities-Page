@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout
+      uses: actions/checkout@v1
+      
     - name: Deploy to Neocities
       uses: bcomnes/deploy-to-neocities@v1
       with:
