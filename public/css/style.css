@@ -1,188 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Source+Sans+Pro&display=swap');
+@import url('normalize.css');
 
-:root {
-    --primary-color: red;
-    --secondary-color: black;
-    --text-color: var(--primary-color);
-    --text-hover: rgb(180, 0, 0);
-
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 /* Body and Main Content */
-html,
+
 body {
-    text-align: center;
-    background-image: url("../assets/cool_background.gif");
-    background-attachment: fixed;
-    background-size: 25em;
-    color: var(--primary-color)
+    background-color: #008080;
 }
 
-h1 {
-    font-family: 'Redressed', cursive;
-    font-size: 40px;
+/* MAIN */
+
+main {
+    margin: 0 10rem;
+    padding: 1rem;
 }
 
-/* Navbar */
 
-.navbar {
-    /* position: sticky;
-    top: 0; */
-    text-align: left;
-}
-
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-item {
-    margin-top: 0.3em;
-    padding: 0.5em;
-}
-
-.nav-link {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: var(--text-hover);
-}
-
-.nav-link[aria-current="page"] {
-    color: rgb(139, 0, 0);
-    pointer-events: none;
-}
-
-/* Others */
-.main-border {
-    margin: auto;
-    max-width: 630px;
-    border: 1px solid var(--primary-color);
-    box-shadow: 5px 5px #000000;
-    padding: 0px 10px 10px;
-    background-color: var(--secondary-color);
-}
-
-.height125 {
-    height: 125px;
-}
-
-.title {
-    margin-top: 2em;
-    margin-bottom: 0.75em;
-}
-
-.spotifyembed {
-    height: auto;
-    width: 60%;
-}
-
-.spotifyembed::before{
-    content: 'epic embed fail';
-}
-
-/* About -> specs */
-.specs {
-    padding: 0 20% 0 20%;
-    margin-top: 30px;
-}
-
-.specs p{
-    text-align: left;
-}
-
-/* About and cool links -> links */
-.tracklist-link, .cool-link {
-    color: var(--text-color);
-}
-
-.tracklist-link:hover, .cool-link:hover {
-    color: var(--text-hover);
-}
-
-footer {
-    margin: 40px;
-}
-
-/* mari.html -> slides */
-#slide {
-    margin: auto;
-    position: relative;
-    width: 45rem;
-    height: 25rem;
-}
-
-#slide img {
-    max-width: 100%;
-    width: auto;
-    height: 100%;
-    display: none;
-    margin: auto;
-}
-
-#prev, #next {
-    cursor: pointer;
-    position: absolute;
-    width: auto;
-    top: 45%;
-    padding: 0.25rem 0.5rem;
-    font-size: 2rem;
-    background-color: transparent;
-    border: none;
-    color: var(--text-color);
-    border-radius: 5px;
-    transition: 10ms;
-}
-
-#prev:hover, #next:hover{
-    color: var(--text-hover);
-}
-#prev:active, #next:active{
-    color: white;
-}
-
-#next {
-    right: 0;
-}
-
-#prev {
-    left: 0;
-}
-
-#count {
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-
-/* smaller devices */
 @media only screen and (max-width: 600px) {
-    .logo {
-        height: auto;
-        width: 100%;
-    }
-    .spotifyembed {
-        height: auto;
-        width: 100%;
-    }
-    .specs {
-        padding: 0 10%;
-    }
-
-    #slide {
-        width: 100%;
-        height: 70vh;
-    }
-    
-    #slide img {
-        height: auto;
-        display: none;
+    main {
+        margin: 0 2rem;
+        padding: 1rem;
     }
 
 }
