@@ -11,11 +11,17 @@
 
 ### Changed
 
+- 🔧 enabled cleanup at deploy [[957ddb6](https://github.com/ericksantos12/Neocities-Page/commit/957ddb63616fd7abcdd16273f297677912df76c7)]
+- 🔧 added workflow dispatch [[d870fbb](https://github.com/ericksantos12/Neocities-Page/commit/d870fbb13e7d1c8cca0d5a070b6d902837ce0b10)]
 - ⬆️ Bump actions/checkout from 1 to 3 [[ba674e0](https://github.com/ericksantos12/Neocities-Page/commit/ba674e0772634b8fb94543262631fa5949b92a26)]
 - 🔧 update &#x60;generate-changelog&#x60; configs [[a43c28d](https://github.com/ericksantos12/Neocities-Page/commit/a43c28dd9e1d68ce597050cf4730a521aab2efd0)]
 
 ### Miscellaneous
 
+- 🔀 Merge pull request [#3](https://github.com/ericksantos12/Neocities-Page/issues/3) from ericksantos12/fix-navbar [[03182d1](https://github.com/ericksantos12/Neocities-Page/commit/03182d14226b1318561cedb23cb2360ca3dcf55e)]
+    *  Merge pull request [#1](https://github.com/ericksantos12/Neocities-Page/issues/1) from ericksantos12/imgbot ([fda9681](https://github.com/ericksantos12/Neocities-Page/commit/fda9681e1fd328d63ff143aa8bc4ad480e94ff73))
+- 🩹 fixed navbar by changing hrefs [#2](https://github.com/ericksantos12/Neocities-Page/issues/2) [[3b58fc8](https://github.com/ericksantos12/Neocities-Page/commit/3b58fc85574eef12a8ef9e862c180ce932966482)]
+- 📝 update changelog [[0c4bc8f](https://github.com/ericksantos12/Neocities-Page/commit/0c4bc8f2b0585fa5ac03d72c82f05840d2cb9e50)]
 - 📝 Update CHANGELOG [[13c49c8](https://github.com/ericksantos12/Neocities-Page/commit/13c49c8bb05bb1b0b46b1dc35f8a5037e08d15a5)]
     * 📝 Update CHANGELOG ([c9c4484](https://github.com/ericksantos12/Neocities-Page/commit/c9c4484466bb43168a917c839e293c1d6f39c5dd))
     * 📝 Update CHANGELOG ([ad19dca](https://github.com/ericksantos12/Neocities-Page/commit/ad19dca4d074a1cfeefc582566b35a750c10fdb3))
@@ -27,7 +33,6 @@
 -  👷 update neocities.yml [[178663f](https://github.com/ericksantos12/Neocities-Page/commit/178663feb4962f8d7c35bc4f1f508ab17c371154)]
 -  [ImgBot] Optimize images [[1fd30a0](https://github.com/ericksantos12/Neocities-Page/commit/1fd30a05ca854430366bede8097cda22e5476123)]
 - 📝 fixed changelog [[23f4552](https://github.com/ericksantos12/Neocities-Page/commit/23f4552b34a46f0e2bf9358105d224ebc2343078)]
--  Merge pull request [#1](https://github.com/ericksantos12/Neocities-Page/issues/1) from ericksantos12/imgbot [[fda9681](https://github.com/ericksantos12/Neocities-Page/commit/fda9681e1fd328d63ff143aa8bc4ad480e94ff73)]
 
 
 <a name="2.3.0"></a>
