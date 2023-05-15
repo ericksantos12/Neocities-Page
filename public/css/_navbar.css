@@ -66,6 +66,24 @@
     main {
         margin: 0;
     }
+
+    .navbar-nav{
+        background-color: #c0c0c0;
+        border: 2px solid #7c7c7c;
+        border-top-color: #fff;
+        border-left-color: #fff;
+    }
+
+    .nav-item:active{
+        background-color: #c0c0c0;
+        border: 2px solid #fff;
+        border-top-color: #7c7c7c;
+        border-left-color: #7c7c7c;
+    }
+
+    .link-text{
+        color: black;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -77,16 +95,8 @@
         height: 100vh;
     }
 
-}
+    .nav-item:active{
+        border: 1px #c0c0c0 dashed;
+    }
 
-@media only screen and (max-width: 600px){
-    .navbar-nav{
-        background-color: #c0c0c0;
-        border: 2px solid #7c7c7c;
-        border-top-color: #fff;
-        border-left-color: #fff;
-    }
-    .link-text{
-        color: black;
-    }
 }
