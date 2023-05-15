@@ -4,7 +4,10 @@ audio.volume = 0.06;
 
 let easterFound = sessionStorage.getItem("easterFound");
 
-if (easterFound) createEasterItem();
+if (easterFound) {
+    createEasterItem();
+    console.log("Secret is unlocked");
+};
 
 
 function easter() {
