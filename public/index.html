@@ -47,7 +47,9 @@
     </nav>
 
     <!-- Audio -->
-    <!-- <audio autoplay id="bg" src="https://cdn.discordapp.com/attachments/773512975788408842/1018328564157923438/videoplayback.m4a" type="audio/mpeg"> your browser doesn't support audio :( </audio> -->
+    <audio autoplay id="bg"
+        src="https://cdn.discordapp.com/attachments/334598557145366528/1107516616398356480/Donkey_Kong_2_OST_Stickerbrush_Symphony.mp3"
+        type="audio/mpeg"> your browser doesn't support audio :( </audio>
 
 
 
@@ -86,7 +88,7 @@
                     </section>
 
                     <hr class="divider">
-                    
+
                     <section class="window-section">
                         <div class="content-title">
                             <img src="assets/titles/Links.gif" alt="">
@@ -152,7 +154,7 @@
 
                     <hr class="divider">
 
-                    
+
                 </div>
 
             </div>
@@ -194,28 +196,5 @@
 </html>
 
 <script>
-    function getAge(dateString) {
-        /**
-         * Calculate the age based on a given birth date.
-         * https://stackoverflow.com/a/7091965
-         * 
-         * @param {string} dateString - A string representing the birth date in the format yyyy-mm-dd.
-         * @returns {number} - The age calculated from the birth date.
-         */
 
-        var today = new Date();
-        var birthDate = new Date(dateString);
-        var age = today.getFullYear() - birthDate.getFullYear();
-        var m = today.getMonth() - birthDate.getMonth();
-        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-            age--;
-        }
-        return age;
-    }
-
-    const ageElement = document.querySelector('#age');
-
-    let age = getAge('2003-04-08')
-
-    ageElement.innerHTML = age;
 </script>
