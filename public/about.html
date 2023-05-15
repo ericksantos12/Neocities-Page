@@ -1,82 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <script defer src="./js/main.js"></script>
-    <script data-goatcounter="https://ericksantos12.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    <title>About</title>
-</head>
-<body>
-    <!-- Logo -->
-    <img class="logo" src="https://cdn.discordapp.com/attachments/560591139116417044/879400481825362010/cooltext391440711005140.gif">
-
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/98.css">
     
-    <nav class="main-border navbar">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <script defer src="./js/main.js"></script>
+        <script data-goatcounter="https://ericksantos12.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        <title>About</title>
+    
+    </head>
+<body>
+    <nav class="navbar">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="mari.html">Mari</a></li>
-            <li class="nav-item"><a class="nav-link" href="coollinks.html">Cool Links</a></li>
-            <li class="nav-item"><a class="nav-link" href="guestbook.html">Guestbook</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="./">
+                    <img src="assets/icons/home.png" alt="Retro Computer Icon">
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mari.html">
+                    <img src="assets/icons/mari.png" alt="Retro Document Folder Icon">
+                    <span class="link-text">Mari</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="guestbook.html">
+                    <img src="assets/icons/guestbook.png" alt="Retro Notepad Icon">
+                    <span class="link-text">Guestbook</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    <img src="assets/icons/about.png" alt="Retro Question Mark Book Icon">
+                    <span class="link-text">About</span>
+                </a>
+            </li>
         </ul>
     </nav>
 
     <!-- Audio -->
-    <audio autoplay id="bg" src="https://cdn.discordapp.com/attachments/773512975788408842/1018603280261185546/yume.m4a" type="audio/mpeg"> your browser doesn't support audio :( </audio>
+    <audio autoplay id="bg" src="https://cdn.discordapp.com/attachments/334598557145366528/1107529662810300497/An_Old_Friend_The_Green_Box.mp3" type="audio/mpeg"> your browser doesn't support audio :( </audio>
 
-    <section class="main-border">
-        <h2>About:</h2>
-        <p>Hello everyone! my name is Erick I'm 19 years old and I'm studying Software Development in Brazil.</p>
-        <p>I'm having fun developing new things and I'm learning a lot of new stuff.</p>
-        <p>One of my favorite aesthetics is Old Web and Weirdcore, when I've found neocities my eyes literally sparkled and I had the idea to make this website.</p>
-        <p>Thanks for visiting!</p>
-    </section>
-
-    <section class="main-border">
-        <h2>My Setup:</h2>
-        <div class="specs">
-            <h3>Peripheral Specs</h3>
-            <p><strong>Headphone</strong> - Havit HV-H2002D</p>
-            <p><strong>Keyboard</strong> - Corsair K68 ABNT2 Cherry MX Red</p>
-            <p><strong>Mouse</strong> - T-Dagger Sergeant T-TGM202</p>
+    <main>
+        <div class="glitch-wrapper">
+            <div class="glitch" data-glitch="About">About</div>
         </div>
-        <div class="specs">
-            <h3>Computer Specs</h3>
-            <p><strong>CPU</strong> - Intel™ Core i3-10100F CPU @ 3.60GHz</p>
-            <p><strong>MEM</strong> - 8GB @ 2666MHz</p>
-            <p><strong>GFX</strong> - GALAX NVIDIA GeForce GTX 1650 4GB</p>
-            <p><strong>SSD</strong> - 240GB Kingston A400</p>
-            <p><strong>HDD</strong> - 1TB Hitachi 7200 RPM</p>
-            <p><strong>OS</strong> - Windows 10 Pro x64</p>
-        </div>
-        
-    </section>
+        <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text">About</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+                <div class="window-content main-body">
+                    <section class="window-section">
+                        <h3>About:</h3>
+                        <p>Hello everyone! my name is Erick I'm <span id="age"></span> years old and I'm studying Software Development in Brazil.</p>
+                        <p>I'm having fun developing new things and I'm learning a lot of new stuff.</p>
+                        <p>One of my favorite aesthetics is Old Web and Weirdcore, when I've found neocities my eyes literally sparkled and I had the idea to make this website.</p>
+                        <p>Thanks for visiting!</p>
+                    </section>
+                
+                    <hr class="divider">
 
-    <section class="main-border">
+                    <section class="window-section">
+                        <h3>My Setup:</h3>
+                        <div>
+                            <h4>Peripheral Specs</h4>
+                            <p><strong>Headphone</strong> - Havit HV-H2002D</p>
+                            <p><strong>Keyboard</strong> - Corsair K68 ABNT2 Cherry MX Red</p>
+                            <p><strong>Mouse</strong> - T-Dagger Sergeant T-TGM202</p>
+                        </div>
+                        <div>
+                            <h4>Computer Specs</h4>
+                            <p><strong>CPU</strong> - Intel™ Core i3-10100F CPU @ 3.60GHz</p>
+                            <p><strong>MEM</strong> - 8GB @ 2666MHz</p>
+                            <p><strong>GFX</strong> - GALAX NVIDIA GeForce GTX 1650 4GB</p>
+                            <p><strong>SSD</strong> - 240GB Kingston A400</p>
+                            <p><strong>HDD</strong> - 1TB Hitachi 7200 RPM</p>
+                            <p><strong>OS</strong> - Windows 10 Pro x64</p>
+                        </div>
+                        
+                    </section>
+                
+                    <hr class="divider">
 
-        <h2>Tracklist:</h2>
-
-        <h3>Home</h3>
-        <p><a class="tracklist-link" href="https://www.youtube.com/watch?v=YHlcmmkiwbU" target="_blank" rel="noopener noreferrer">Instupendo - Six Forty Seven</a></p>
-
-        <h3>Mari</h3>
-        <p><a class="tracklist-link" href="https://www.youtube.com/watch?v=woPff-Tpkns" target="_blank" rel="noopener noreferrer">Undertale OST - Dogsong</a></p>
+                    <section class="window-section">
+                
+                        <h3>Credits:</h3>
+                        
+                        <ul class="general-list">
+                            <li>
+                                <a href="https://jdan.github.io/98.css/?ref=producthunt#window">
+                                    98.css
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://10015.io/tools/css-text-glitch-effect-generator">
+                                    CSS Text Glitch Effect
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://win98icons.alexmeub.com">
+                                    Windows 98 Icon Viewer
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://anilist.co/forum/thread/24917">
+                                    Minzkraut Spotify Embed
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.3dtextmaker.com/cgi-bin/3dtext.pl">
+                                    3D Text Maker
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.htmlcommentbox.com">
+                                    HTML Comment Box
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
 
         <!-- <h3>Cool Links</h3>
         <p>None</p> -->
 
-        <h3>Guestbook</h3>
-        <p><a class="tracklist-link" href="https://www.youtube.com/watch?v=BXo3DrXHY8w" target="_blank" rel="noopener noreferrer">Chrono Trigger OST - Corridors of time</a></p>
-        
-        <h3>About</h3>
-        <p><a class="tracklist-link" href="https://www.youtube.com/watch?v=t3RIvZMdCks" target="_blank" rel="noopener noreferrer">Yume Nikki OST - Menu Type Change</a></p>
 
-    </section>
+                </div>
+            </div>
+          </div>
+    </main>
+
     
 </body>
 </html>
+
+<style>
+    @media only screen and (min-width: 600px) {
+    
+        .main-body {
+            height: 50rem;
+            overflow: auto;
+            padding: 0 1rem;
+        }
+
+    }
+</style>
