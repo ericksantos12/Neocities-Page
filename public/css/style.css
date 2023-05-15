@@ -17,6 +17,13 @@ main, footer {
     padding: 1rem;
 }
 
+.general-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
 /* Windows */
 
 
@@ -37,7 +44,7 @@ main, footer {
 
 
 @media only screen and (max-width: 600px) {
-    footer {
+    body {
         margin-bottom: 5rem;
     }
     .title-gif, .extra-gif{
