@@ -76,4 +76,17 @@
         width: 5rem;
         height: 100vh;
     }
+
+}
+
+@media only screen and (max-width: 600px){
+    .navbar-nav{
+        background-color: #c0c0c0;
+        border: 2px solid #7c7c7c;
+        border-top-color: #fff;
+        border-left-color: #fff;
+    }
+    .link-text{
+        color: black;
+    }
 }

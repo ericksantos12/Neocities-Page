@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 @import url('normalize.css');
 @import url('_navbar.css');
 @import url('_glitch-logo.css');
@@ -6,21 +8,59 @@
 /* Body and Main Content */
 
 body {
-    background-color: #008080;
+    background-image: url(../assets/bg/cool_background.gif);
+    background-size: cover;
 }
 
-/* MAIN */
-
-main {
-    margin: 0 10rem;
+main, footer {
+    /* margin: 0 25vw; */
     padding: 1rem;
 }
 
+/* Windows */
+
+
+.window-content{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.divider{
+    margin: 3rem 0;
+}
+
+.content-title {
+    margin: 2rem 0;
+}
+
+
 
 @media only screen and (max-width: 600px) {
-    main {
-        margin: 0 2rem;
-        padding: 1rem;
+    footer {
+        margin-bottom: 5rem;
+    }
+    .title-gif, .extra-gif{
+        height: 2rem;
+    }
+    .spotify-embed {
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    
+    .main-body {
+        height: 35rem;
+        overflow: auto;
+        padding: 0 1rem;
     }
 
+    .spotify-embed {
+        width: 25rem;
+    }
+
+    .window {
+        margin: 0 auto;
+        width: 50rem;
+    }
 }
