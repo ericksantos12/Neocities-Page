@@ -42,6 +42,12 @@ main, footer {
 }
 
 
+#slide img {
+    margin: 5vh auto;
+    display: none;
+    max-height: 70vh;
+    max-width: 100%;
+}
 
 @media only screen and (max-width: 600px) {
     body {
@@ -52,6 +58,9 @@ main, footer {
     }
     .spotify-embed {
         width: 80%;
+    }
+    #slide button {
+        height: 4rem;
     }
 }
 @media only screen and (min-width: 600px) {
