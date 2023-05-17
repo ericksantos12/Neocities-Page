@@ -3,12 +3,22 @@
 <a name="next"></a>
 ## next
 
+### Miscellaneous
+
+-  Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page [[6b3d185](https://github.com/ericksantos12/Neocities-Page/commit/6b3d1851277d37f5924d86a405b8d4284e9d1a5c)]
+- 📝 update changelog [[d08fa87](https://github.com/ericksantos12/Neocities-Page/commit/d08fa87092cd49c937b7085e1265b2992f19451e)]
+
+
+<a name="3.0.2"></a>
+## 3.0.2 (2023-05-17)
+
 ### Removed
 
 - 🔥 removed &#x60;chest_opening.mp3&#x60; [[aba1e9f](https://github.com/ericksantos12/Neocities-Page/commit/aba1e9fa18a728ad4892cdaecd3c9885d52a8181)]
 
 ### Miscellaneous
 
+- 🩹 added heart gifs to assets [[f566e34](https://github.com/ericksantos12/Neocities-Page/commit/f566e3476acd4e12d0c58e37e336a2f505f879c0)]
 - 📝 update changelog [[64348db](https://github.com/ericksantos12/Neocities-Page/commit/64348db4126062d9c1d51a1ca574d41280d7fb97)]
 - 🩹 changed audio url [[9485336](https://github.com/ericksantos12/Neocities-Page/commit/9485336a829a902955c7fb8d0a48c7b2ebbcaf96)]
 - 🔀 Merge pull request [#4](https://github.com/ericksantos12/Neocities-Page/issues/4) from ericksantos12/rework [[1a25328](https://github.com/ericksantos12/Neocities-Page/commit/1a25328363886d2bacffbbf64bd190a2de2503b9)]
