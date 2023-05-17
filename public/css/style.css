@@ -31,6 +31,7 @@ main, footer {
     font-size: 1.5em;
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
+    padding: 0 1rem;
 }
 
 .divider{
@@ -68,7 +69,7 @@ main, footer {
     .main-body {
         height: 35rem;
         overflow: auto;
-        padding: 0 1rem;
+        
     }
 
     .spotify-embed {
