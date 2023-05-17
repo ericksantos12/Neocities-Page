@@ -1,8 +1,7 @@
 {
   "name": "neocities-page",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "Este site foi criado com o intuito de ter um cantinho nesta comunidade, e também adquirir aprendizados sobre HTML e CSS",
-  "main": "index.html",
   "scripts": {},
   "repository": {
     "type": "git",
