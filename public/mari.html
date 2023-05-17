@@ -1,72 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <script defer src="./js/main.js"></script>
-    <script data-goatcounter="https://ericksantos12.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    <title>Mari my beloved</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/98.css">
+    
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <script defer src="./js/main.js"></script>
+        <script defer src="./js/slideshow.js"></script>
+        <script data-goatcounter="https://ericksantos12.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        <title>Mari my Beloved</title>
+    
+    </head>
 <body>
     <!-- Logo -->
-    <img class="logo" src="https://cdn.discordapp.com/attachments/560591139116417044/879400481825362010/cooltext391440711005140.gif">
-
-    
-    <nav class="main-border navbar">
+   
+    <nav class="navbar">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="mari.html">Mari</a></li>
-            <li class="nav-item"><a class="nav-link" href="coollinks.html">Cool Links</a></li>
-            <li class="nav-item"><a class="nav-link" href="guestbook.html">Guestbook</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="./">
+                    <img src="assets/icons/home.png" alt="Retro Computer Icon">
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mari.html">
+                    <img src="assets/icons/mari.png" alt="Retro Document Folder Icon">
+                    <span class="link-text">Mari</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="guestbook.html">
+                    <img src="assets/icons/guestbook.png" alt="Retro Notepad Icon">
+                    <span class="link-text">Guestbook</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    <img src="assets/icons/about.png" alt="Retro Question Mark Book Icon">
+                    <span class="link-text">About</span>
+                </a>
+            </li>
         </ul>
     </nav>
 
     <!-- Audio -->
     <audio autoplay loop id="bg" src="https://cdn.discordapp.com/attachments/773512975788408842/1020413095287459911/dog.m4a" type="audio/mpeg"> your browser doesn't support audio :( </audio>
 
-<br>
+    <main>
+        <div class="glitch-wrapper">
+            <div id="alpha" class="glitch" onclick="easter()" data-glitch="Mari">Mari</div>
+        </div>
+
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">Mari!!! omgg hi :D</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <div class="window-content">
+                <div id="slide">
+                    <button id="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <span id="count"></span>
+                    <button id="next" onclick="changeImage(1)">&#10095;</button>
+
+                    <img src="https://files.catbox.moe/nwv833.jpg">
+                    <img src="https://files.catbox.moe/qb242k.jpg">
+                    <img src="https://files.catbox.moe/vpsgg6.jpg">
+                    <img src="https://files.catbox.moe/2sqv35.jpg">
+                    <img src="https://files.catbox.moe/xguzvl.jpg">
+                    <img src="https://files.catbox.moe/cq2u6b.jpg">
+                    <img src="https://files.catbox.moe/4jfskg.jpg">
+                    <img src="https://files.catbox.moe/s620q4.jpg">
+                    <img src="https://files.catbox.moe/uf7sy6.jpg">
+                    <img src="https://files.catbox.moe/tvxkhu.jpg">
+                    <img src="https://files.catbox.moe/6aq6ei.jpg">
+                    <img src="https://files.catbox.moe/rc79l1.jpg">
+                    <img src="https://files.catbox.moe/o6gc4r.jpg">
+                    <img src="https://files.catbox.moe/kc3q8o.jpg">
+                    <img src="https://files.catbox.moe/u27ic3.jpg">
+                    <img src="https://files.catbox.moe/m1of7y.jpg">
+                    <img src="https://files.catbox.moe/87b00u.jpg">
+                    <img src="https://files.catbox.moe/8grts5.jpg">
+                    <img src="https://files.catbox.moe/vu0a0f.jpg">
+                    <img src="https://files.catbox.moe/xhhfrm.jpg">
+                    <img src="https://files.catbox.moe/0wtqjp.jpg">
+                    <img src="https://files.catbox.moe/4k5j50.jpg">
+                    <img src="https://files.catbox.moe/cyecsk.jpg">
+                    <img src="https://files.catbox.moe/nlme3z.jpg">
+                    <img src="https://files.catbox.moe/kbvg6o.jpg">
+                    <img src="https://files.catbox.moe/5iq4uy.jpg">
+                    <img src="https://files.catbox.moe/84rl19.jpg">
+                    <img src="https://files.catbox.moe/9v5lxd.jpg">
+                    <img src="https://files.catbox.moe/2ga8s2.jpg">
+                    <img src="https://files.catbox.moe/mjptt6.jpg">
+                    <img src="https://files.catbox.moe/uu4ue3.jpg">
+                    <img src="https://files.catbox.moe/bzb4bq.jpg">
+
+
+                </div>
+
+            </div>
+          </div>
+        </div>
+    </main>
     <!-- Contents -->
 
-    <div id="slide">
-        <img src="https://files.catbox.moe/nwv833.jpg">
-        <img src="https://files.catbox.moe/qb242k.jpg">
-        <img src="https://files.catbox.moe/vpsgg6.jpg">
-        <img src="https://files.catbox.moe/2sqv35.jpg">
-        <img src="https://files.catbox.moe/xguzvl.jpg">
-        <img src="https://files.catbox.moe/cq2u6b.jpg">
-        <img src="https://files.catbox.moe/4jfskg.jpg">
-        <img src="https://files.catbox.moe/s620q4.jpg">
-        <img src="https://files.catbox.moe/uf7sy6.jpg">
-        <img src="https://files.catbox.moe/tvxkhu.jpg">
-        <img src="https://files.catbox.moe/6aq6ei.jpg">
-        <img src="https://files.catbox.moe/rc79l1.jpg">
-        <img src="https://files.catbox.moe/o6gc4r.jpg">
-        <img src="https://files.catbox.moe/kc3q8o.jpg">
-        <img src="https://files.catbox.moe/u27ic3.jpg">
-        <img src="https://files.catbox.moe/m1of7y.jpg">
-        <img src="https://files.catbox.moe/87b00u.jpg">
-        <img src="https://files.catbox.moe/8grts5.jpg">
-        <img src="https://files.catbox.moe/vu0a0f.jpg">
-        <img src="https://files.catbox.moe/xhhfrm.jpg">
-        <img src="https://files.catbox.moe/0wtqjp.jpg">
-        <img src="https://files.catbox.moe/4k5j50.jpg">
-        <img src="https://files.catbox.moe/cyecsk.jpg">
-        <img src="https://files.catbox.moe/nlme3z.jpg">
-        <img src="https://files.catbox.moe/kbvg6o.jpg">
-        <img src="https://files.catbox.moe/5iq4uy.jpg">
-        <img src="https://files.catbox.moe/84rl19.jpg">
-        <img src="https://files.catbox.moe/9v5lxd.jpg">
-        <img src="https://files.catbox.moe/2ga8s2.jpg">
-
-        <button id="prev" onclick="changeImage(-1)">&#10094;</button>
-        <button id="next" onclick="changeImage(1)">&#10095;</button>
-        <span id="count"></span>
-    </div>
 
 </body>
 

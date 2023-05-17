@@ -1,188 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
-:root {
-    --primary-color: red;
-    --secondary-color: black;
-    --text-color: var(--primary-color);
-    --text-hover: rgb(180, 0, 0);
+@import url('normalize.css');
+@import url('_navbar.css');
+@import url('_glitch-logo.css');
 
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 /* Body and Main Content */
-html,
+
 body {
-    text-align: center;
-    background-image: url("../assets/cool_background.gif");
-    background-attachment: fixed;
-    background-size: 25em;
-    color: var(--primary-color)
+    background-image: url(../assets/bg/cool_background.gif);
+    background-size: cover;
 }
 
-h1 {
-    font-family: 'Redressed', cursive;
-    font-size: 40px;
+main, footer {
+    /* margin: 0 25vw; */
+    padding: 1rem;
 }
 
-/* Navbar */
-
-.navbar {
-    /* position: sticky;
-    top: 0; */
-    text-align: left;
-}
-
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0;
+.general-list {
+    list-style: none;
     padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
 }
 
-.nav-item {
-    margin-top: 0.3em;
-    padding: 0.5em;
+/* Windows */
+
+
+.window-content{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 0 1rem;
 }
 
-.nav-link {
-    color: var(--text-color);
-    text-decoration: none;
+.divider{
+    margin: 3rem 0;
 }
 
-.nav-link:hover {
-    color: var(--text-hover);
+.content-title {
+    margin: 2rem 0;
 }
 
-.nav-link[aria-current="page"] {
-    color: rgb(139, 0, 0);
-    pointer-events: none;
-}
-
-/* Others */
-.main-border {
-    margin: auto;
-    max-width: 630px;
-    border: 1px solid var(--primary-color);
-    box-shadow: 5px 5px #000000;
-    padding: 0px 10px 10px;
-    background-color: var(--secondary-color);
-}
-
-.height125 {
-    height: 125px;
-}
-
-.title {
-    margin-top: 2em;
-    margin-bottom: 0.75em;
-}
-
-.spotifyembed {
-    height: auto;
-    width: 60%;
-}
-
-.spotifyembed::before{
-    content: 'epic embed fail';
-}
-
-/* About -> specs */
-.specs {
-    padding: 0 20% 0 20%;
-    margin-top: 30px;
-}
-
-.specs p{
-    text-align: left;
-}
-
-/* About and cool links -> links */
-.tracklist-link, .cool-link {
-    color: var(--text-color);
-}
-
-.tracklist-link:hover, .cool-link:hover {
-    color: var(--text-hover);
-}
-
-footer {
-    margin: 40px;
-}
-
-/* mari.html -> slides */
-#slide {
-    margin: auto;
-    position: relative;
-    width: 45rem;
-    height: 25rem;
-}
 
 #slide img {
-    max-width: 100%;
-    width: auto;
-    height: 100%;
+    margin: 5vh auto;
     display: none;
-    margin: auto;
+    max-height: 70vh;
+    max-width: 100%;
 }
 
-#prev, #next {
-    cursor: pointer;
-    position: absolute;
-    width: auto;
-    top: 45%;
-    padding: 0.25rem 0.5rem;
-    font-size: 2rem;
-    background-color: transparent;
-    border: none;
-    color: var(--text-color);
-    border-radius: 5px;
-    transition: 10ms;
-}
-
-#prev:hover, #next:hover{
-    color: var(--text-hover);
-}
-#prev:active, #next:active{
-    color: white;
-}
-
-#next {
-    right: 0;
-}
-
-#prev {
-    left: 0;
-}
-
-#count {
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-
-/* smaller devices */
 @media only screen and (max-width: 600px) {
-    .logo {
-        height: auto;
-        width: 100%;
+    body {
+        margin-bottom: 5rem;
     }
-    .spotifyembed {
-        height: auto;
-        width: 100%;
+    .title-gif, .extra-gif{
+        height: 2rem;
     }
-    .specs {
-        padding: 0 10%;
+    .spotify-embed {
+        width: 80%;
     }
-
-    #slide {
-        width: 100%;
-        height: 70vh;
+    #slide button {
+        height: 4rem;
     }
+}
+@media only screen and (min-width: 600px) {
     
-    #slide img {
-        height: auto;
-        display: none;
+    .main-body {
+        height: 35rem;
+        overflow: auto;
+        
     }
 
+    .spotify-embed {
+        width: 25rem;
+    }
+
+    .window {
+        margin: 0 auto;
+        width: 50rem;
+    }
 }

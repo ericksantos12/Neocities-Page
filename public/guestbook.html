@@ -1,44 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <script defer src="./js/main.js"></script>
-    <script data-goatcounter="https://ericksantos12.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    <title>Guestbook</title>
-</head>
-<body>
-
-    <img class="logo" src="https://cdn.discordapp.com/attachments/560591139116417044/879400481825362010/cooltext391440711005140.gif">
-
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/98.css">
     
-    <nav class="main-border navbar">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <script defer src="./js/main.js"></script>
+        <script data-goatcounter="https://ericksantos12.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        <title>Guestbook</title>
+    
+    </head>
+<body>
+    
+    <nav class="navbar">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="mari.html">Mari</a></li>
-            <li class="nav-item"><a class="nav-link" href="coollinks.html">Cool Links</a></li>
-            <li class="nav-item"><a class="nav-link" href="guestbook.html">Guestbook</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="./">
+                    <img src="assets/icons/home.png" alt="Retro Computer Icon">
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mari.html">
+                    <img src="assets/icons/mari.png" alt="Retro Document Folder Icon">
+                    <span class="link-text">Mari</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="guestbook.html">
+                    <img src="assets/icons/guestbook.png" alt="Retro Notepad Icon">
+                    <span class="link-text">Guestbook</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    <img src="assets/icons/about.png" alt="Retro Question Mark Book Icon">
+                    <span class="link-text">About</span>
+                </a>
+            </li>
         </ul>
     </nav>
 
     <!-- Audio -->
-    <audio autoplay id="bg" src="https://cdn.discordapp.com/attachments/773512975788408842/1018334738718674974/corridors.m4a" type="audio/mpeg"> your browser doesn't support audio :( </audio>
+    <audio autoplay id="bg" src="https://cdn.discordapp.com/attachments/334598557145366528/1108186439268704276/Donkey_Kong_Country_2_-_Forest_Interlude_Restored.mp3" type="audio/mpeg"> your browser doesn't support audio :( </audio>
  
-    <section class="main-border">
-        <!-- begin wwww.htmlcommentbox.com -->
-        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
-        <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-        <script type="text/javascript" id="hcb"> if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24qWpb5%2FvT2iocheHft7Lc01"+"&opts=16798&num=10&ts=1662859279947");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})();</script>
-        <!-- end www.htmlcommentbox.com -->
-    </section>
+    <main>
+        <div class="glitch-wrapper">
+            <div id="beta" class="glitch" onclick="easter()" data-glitch="Guestbook">Guestbook</div>
+        </div>
+
+        <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text">Guestbook</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+                <div class="window-content">
+                    <!-- begin wwww.htmlcommentbox.com -->
+                    <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+                    <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+                    <script type="text/javascript" id="hcb"> if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24qWpb5%2FvT2iocheHft7Lc01"+"&opts=16798&num=10&ts=1662859279947");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})();</script>
+                    <!-- end www.htmlcommentbox.com -->
+                </div>
+            </div>
+          </div>
+    </main>
+
 </body>
 <style>
-    * {
+    .window-content {
         text-align: left;
     }
 </style>
