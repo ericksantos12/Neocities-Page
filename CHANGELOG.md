@@ -1,27 +1,61 @@
 # Changelog
 
-<a name="next"></a>
-## next
+<a name="3.0.0"></a>
+## 3.0.0 (2023-05-17)
 
 ### Added
 
+- ✨ added new music [[42ce158](https://github.com/ericksantos12/Neocities-Page/commit/42ce1580d51d59ab33772449656fce0af7a11d28)]
+    * ✨ added new music ([7c7b4e1](https://github.com/ericksantos12/Neocities-Page/commit/7c7b4e15699b5ebbba92ae249b666183b842bae7))
+- ✨ created secret page [[ed36791](https://github.com/ericksantos12/Neocities-Page/commit/ed36791dbfe9c2b79279e7c5300f429153a8f4ed)]
+- ✨ finished &#x60;mari.html&#x60; rework [[cb0122d](https://github.com/ericksantos12/Neocities-Page/commit/cb0122d9bfbe7937d7ff80279d0db33638fb7563)]
+- 🔊 added log if &#x60;secret&#x60; is found [[332c185](https://github.com/ericksantos12/Neocities-Page/commit/332c185262393fdc0d3de1e14b2f275791f6c686)]
+- ✨ added age calculation [[12a649b](https://github.com/ericksantos12/Neocities-Page/commit/12a649b8cbf97ace502182cdcdc212c18ab0ac94)]
+- ✨ reworked &#x60;guestbook.html&#x60; [[7dbdc24](https://github.com/ericksantos12/Neocities-Page/commit/7dbdc2418ebee5165936801e322cfa695799bd6a)]
+- ✨ reworked &#x60;about.html&#x60; [[2385424](https://github.com/ericksantos12/Neocities-Page/commit/2385424b81a6737f43d6fc2ebb66e737264d6089)]
+- ✨ complete index rework [[2df876c](https://github.com/ericksantos12/Neocities-Page/commit/2df876c5db5a3a3244b8dc99e57116b814c071a8)]
+- ✨ reworked first page with new css [[9d0cd90](https://github.com/ericksantos12/Neocities-Page/commit/9d0cd9007e1d828d9c6682a3aef0f12f98208190)]
 - ✨ added generate-changelog workflow [[006c8c9](https://github.com/ericksantos12/Neocities-Page/commit/006c8c911a22c7a9e5365c4d3eed53912962e22d)]
 - 📈 added goatcounter [[8e91c02](https://github.com/ericksantos12/Neocities-Page/commit/8e91c0299992d661c72fd73feeaf8865754bfd3f)]
     * 📈 added goatcounter ([196dee8](https://github.com/ericksantos12/Neocities-Page/commit/196dee8129c81c8421122366c08e1459ae89b587))
 
 ### Changed
 
+- 🍱 added new 88x31 [[eabf680](https://github.com/ericksantos12/Neocities-Page/commit/eabf680827254d8bbdeb7d6034e0326f824a5238)]
+- 🚚 renamed old 88x31 [[3cb6105](https://github.com/ericksantos12/Neocities-Page/commit/3cb6105f40a118f90a46e49be847dc34a7bf6cc3)]
+- 🎨 moved attribute to a better style [[362a91d](https://github.com/ericksantos12/Neocities-Page/commit/362a91d353f2acd75e0c7c4dc28dc138d46d2ade)]
+- 🎨 code splitting [[98e273a](https://github.com/ericksantos12/Neocities-Page/commit/98e273a755b2dcb832e92e97eba18191f29072ac)]
+- 💄 added general list styling [[3cee134](https://github.com/ericksantos12/Neocities-Page/commit/3cee134e43808ad5e376319c0737ff6d2216ee6d)]
+- 💄 navbar improvements [[948271e](https://github.com/ericksantos12/Neocities-Page/commit/948271ea788d6dde69deb3560b557691356cbb0c)]
+- 💄 added glitch logo [[9bd7bf1](https://github.com/ericksantos12/Neocities-Page/commit/9bd7bf1a0db3601d1cc06174ff312e8cf55669fd)]
+- 💄 update favicon [[35ae60b](https://github.com/ericksantos12/Neocities-Page/commit/35ae60b6e7ee126e149535fa1ee698322d774c93)]
+- 💄 added new navbar [[a51d4cc](https://github.com/ericksantos12/Neocities-Page/commit/a51d4cc242aedf8cd9bda4c24ffd88460861f513)]
+- 💄 added normalize.css [[022c5db](https://github.com/ericksantos12/Neocities-Page/commit/022c5dbba68a3dc40274cfba739fdd5497563197)]
+- 🍱 added nav icons [[a59eff1](https://github.com/ericksantos12/Neocities-Page/commit/a59eff1b663029b119f2ff7b319329b1b3d6dcff)]
 - 🔧 enabled cleanup at deploy [[957ddb6](https://github.com/ericksantos12/Neocities-Page/commit/957ddb63616fd7abcdd16273f297677912df76c7)]
 - 🔧 added workflow dispatch [[d870fbb](https://github.com/ericksantos12/Neocities-Page/commit/d870fbb13e7d1c8cca0d5a070b6d902837ce0b10)]
 - ⬆️ Bump actions/checkout from 1 to 3 [[ba674e0](https://github.com/ericksantos12/Neocities-Page/commit/ba674e0772634b8fb94543262631fa5949b92a26)]
 - 🔧 update &#x60;generate-changelog&#x60; configs [[a43c28d](https://github.com/ericksantos12/Neocities-Page/commit/a43c28dd9e1d68ce597050cf4730a521aab2efd0)]
 
+### Removed
+
+- 🔥 removed legacy assets [[595a0af](https://github.com/ericksantos12/Neocities-Page/commit/595a0af7623a778f2facbcd91346c35d5560232b)]
+- 🔥 removed almost all css to rework [[450bde0](https://github.com/ericksantos12/Neocities-Page/commit/450bde040b1d16e2939ea0e2e1a1863a01cae388)]
+- 🔥 removed nav auto highlight [[c8447d2](https://github.com/ericksantos12/Neocities-Page/commit/c8447d2ff3af01e978a68c0feea2ed9f01e3db42)]
+- 🔥 removed coollinks page [[ffb3ea5](https://github.com/ericksantos12/Neocities-Page/commit/ffb3ea51a47c1e56ea0d4627103b33d6ab146536)]
+
 ### Miscellaneous
 
-- 🔀 Merge pull request [#3](https://github.com/ericksantos12/Neocities-Page/issues/3) from ericksantos12/fix-navbar [[03182d1](https://github.com/ericksantos12/Neocities-Page/commit/03182d14226b1318561cedb23cb2360ca3dcf55e)]
+- 🔀 Merge pull request [#4](https://github.com/ericksantos12/Neocities-Page/issues/4) from ericksantos12/rework [[1a25328](https://github.com/ericksantos12/Neocities-Page/commit/1a25328363886d2bacffbbf64bd190a2de2503b9)]
+    * 🔀 Merge pull request [#3](https://github.com/ericksantos12/Neocities-Page/issues/3) from ericksantos12/fix-navbar ([03182d1](https://github.com/ericksantos12/Neocities-Page/commit/03182d14226b1318561cedb23cb2360ca3dcf55e))
     *  Merge pull request [#1](https://github.com/ericksantos12/Neocities-Page/issues/1) from ericksantos12/imgbot ([fda9681](https://github.com/ericksantos12/Neocities-Page/commit/fda9681e1fd328d63ff143aa8bc4ad480e94ff73))
+- 🥚 added new title [[e151c04](https://github.com/ericksantos12/Neocities-Page/commit/e151c0412fc1fe30b917707d390c8dac553b6b21)]
+- 🥚 added new credits [[63c9ceb](https://github.com/ericksantos12/Neocities-Page/commit/63c9ceb365ecb6adb4b232850fa6528419e54e2b)]
+- 📄 added MIT License [[475e20c](https://github.com/ericksantos12/Neocities-Page/commit/475e20ccc73eb21b7e890416c758eb21465a689a)]
+- 🥚 added an easter egg [[86f42cd](https://github.com/ericksantos12/Neocities-Page/commit/86f42cd3b73d8edc5977b6085a147986d1abb12d)]
+- 📝 update changelog [[d3edf89](https://github.com/ericksantos12/Neocities-Page/commit/d3edf89d1aa24c5812a4a10befd1a228e24b469b)]
+    * 📝 update changelog ([0c4bc8f](https://github.com/ericksantos12/Neocities-Page/commit/0c4bc8f2b0585fa5ac03d72c82f05840d2cb9e50))
 - 🩹 fixed navbar by changing hrefs [#2](https://github.com/ericksantos12/Neocities-Page/issues/2) [[3b58fc8](https://github.com/ericksantos12/Neocities-Page/commit/3b58fc85574eef12a8ef9e862c180ce932966482)]
-- 📝 update changelog [[0c4bc8f](https://github.com/ericksantos12/Neocities-Page/commit/0c4bc8f2b0585fa5ac03d72c82f05840d2cb9e50)]
 - 📝 Update CHANGELOG [[13c49c8](https://github.com/ericksantos12/Neocities-Page/commit/13c49c8bb05bb1b0b46b1dc35f8a5037e08d15a5)]
     * 📝 Update CHANGELOG ([c9c4484](https://github.com/ericksantos12/Neocities-Page/commit/c9c4484466bb43168a917c839e293c1d6f39c5dd))
     * 📝 Update CHANGELOG ([ad19dca](https://github.com/ericksantos12/Neocities-Page/commit/ad19dca4d074a1cfeefc582566b35a750c10fdb3))
