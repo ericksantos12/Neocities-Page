@@ -38,7 +38,7 @@ function easter() {
     const eggs = [sessionStorage.getItem("alpha"), sessionStorage.getItem("beta"), sessionStorage.getItem("gamma")];
 
     if (eggs.every(Boolean)) {
-        const foundAudio = new Audio('assets/audio/chest_opening.mp3')
+        const foundAudio = new Audio('https://cdn.discordapp.com/attachments/334598557145366528/1108203307433992232/chest_opening.mp3')
         foundAudio.play();
         sessionStorage.setItem("easterFound", true);
 
