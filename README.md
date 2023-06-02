@@ -1,25 +1,45 @@
-<h1 align="center">🐱 Neocities-Page 🐱</h1>
-<p>
+
+<div align="center">
+  <img width=80 src="./docs/imgs/computer.png">
+</div>
+
+<h1 align="center">🐱 My Neocities 🐱</h1>
+<div align="center">
   <a href="https://github.com/ericksantos12/Neocities-Page/actions/workflows/neocities.yml">
-    <img src="https://github.com/ericksantos12/Neocities-Page/actions/workflows/neocities.yml/badge.svg" alt="Gitmoji Changelog">
+    <img src="https://img.shields.io/github/actions/workflow/status/ericksantos12/Neocities-Page/neocities.yml?label=Deploy&style=for-the-badge&color=a6e3a1&logoColor=D9E0EE&labelColor=302D41" alt="Deploy Badge">
+  </a>
+  <a href="https://github.com/ericksantos12/Neocities-Page/commits/main">
+    <img src="https://img.shields.io/github/last-commit/ericksantos12/Neocities-Page?style=for-the-badge&color=cba6f7&logoColor=D9E0EE&labelColor=302D41" alt="Last Commit">
+  </a>
+  <a href="https://github.com/ericksantos12/Neocities-Page/stargazers">
+    <img src="https://img.shields.io/github/stars/ericksantos12/Neocities-Page?style=for-the-badge&color=f38ba8&logoColor=D9E0EE&labelColor=302D41" alt="Stars">
+  </a>
+  <a href="https://github.com/ericksantos12/Neocities-Page/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/ericksantos12/Neocities-Page?style=for-the-badge&color=a6e3a1&logoColor=D9E0EE&labelColor=302D41" alt="License">
   </a>
   <a href="https://gitmoji.dev">
-    <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+    <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge&color=f9e2af&logoColor=D9E0EE&labelColor=302D41" alt="Gitmoji">
   </a>
   <a href="https://github.com/frinyvonnick/gitmoji-changelog">
-    <img src="https://img.shields.io/badge/Changelog-gitmoji-brightgreen.svg" alt="Gitmoji Changelog">
+    <img src="https://img.shields.io/badge/Changelog-gitmoji-brightgreen.svg?style=for-the-badge&color=fab387&logoColor=D9E0EE&labelColor=302D41" alt="Gitmoji Changelog">
   </a>
-  <a href="https://twitter.com/ErickSantosS12" target="_blank">
-    <img alt="Twitter: ErickSantosS12" src="https://img.shields.io/twitter/follow/ErickSantosS12.svg?style=social" />
-  </a>
-</p>
+</div>
 
-> Site criado com o inuito de ter um cantinho na comunidade do neocities, e também para adquirir conhecimentos sobre HTML e CSS
+## 🧐 Por que?
 
-> [Neocities](https://neocities.org) é um serviço de hospedagem de sites gratuito, sem anúncios e de alta perfomance. Inspirado no antigo [GeoCities](https://pt.wikipedia.org/wiki/Yahoo!_GeoCities), ele encoraja com que os usuários criem seus próprios sites estáticos, do jeito que quiserem e adicionando seus próprios toques.
+Site criado com o intuito de ter um cantinho na comunidade do neocities, e também para adquirir conhecimentos sobre HTML e CSS
 
+[Neocities](https://neocities.org) é um serviço de hospedagem de sites gratuito, sem anúncios e de alta perfomance. Inspirado no antigo [GeoCities](https://pt.wikipedia.org/wiki/Yahoo!_GeoCities), ele encoraja com que os usuários criem seus próprios sites estáticos, do jeito que quiserem e adicionando seus próprios toques.
 
-### 🏠 [Homepage](https://ericksantos12.neocities.org)
-### ⌚ [Changelog](https://github.com/ericksantos12/Neocities-Page/blob/main/CHANGELOG.md)
+<div align="center">
 
+| 🏠 [Homepage](https://ericksantos12.neocities.org) | ⌚ [Changelog](https://github.com/ericksantos12/Neocities-Page/blob/main/CHANGELOG.md) |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------- |
+
+</div>
+
+## 📃 Creditos
+- [98.css](https://jdan.github.io/98.css/)
+- [Windows 98 Icon Viewer](https://win98icons.alexmeub.com)
+- [W3Schools](https://www.w3schools.com)
 
