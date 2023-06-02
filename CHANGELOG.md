@@ -10,13 +10,15 @@
 
 ### Miscellaneous
 
+- 📝 update changelog [[44e3b2d](https://github.com/ericksantos12/Neocities-Page/commit/44e3b2d99bf5bd96f87c205e7e8a3d4e9d25bd0b)]
+    * 📝 update changelog ([7269742](https://github.com/ericksantos12/Neocities-Page/commit/72697422df8e0c01f7e03036b581ad918d704e08))
+    * 📝 update changelog ([2269935](https://github.com/ericksantos12/Neocities-Page/commit/2269935cba7c247d64a676ec0f8b49a2b69126b0))
+    * 📝 update changelog ([d08fa87](https://github.com/ericksantos12/Neocities-Page/commit/d08fa87092cd49c937b7085e1265b2992f19451e))
+- 📝 cleaned up badges [[7734d37](https://github.com/ericksantos12/Neocities-Page/commit/7734d3797dfd0eb8fe9b384fb43b14c302424119)]
 -  Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page [[66ded16](https://github.com/ericksantos12/Neocities-Page/commit/66ded16e1ba9764c2be7ea51cc057db8db707966)]
     *  Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page ([6b3d185](https://github.com/ericksantos12/Neocities-Page/commit/6b3d1851277d37f5924d86a405b8d4284e9d1a5c))
 - 📝 update readme [[3a50ba3](https://github.com/ericksantos12/Neocities-Page/commit/3a50ba35f5ca6955dc030a619f26a8f7cd03e918)]
 -  👷 cleaned up a bit [[db097d0](https://github.com/ericksantos12/Neocities-Page/commit/db097d08abbbf82f29b151458a43bc8fddc00ef0)]
-- 📝 update changelog [[7269742](https://github.com/ericksantos12/Neocities-Page/commit/72697422df8e0c01f7e03036b581ad918d704e08)]
-    * 📝 update changelog ([2269935](https://github.com/ericksantos12/Neocities-Page/commit/2269935cba7c247d64a676ec0f8b49a2b69126b0))
-    * 📝 update changelog ([d08fa87](https://github.com/ericksantos12/Neocities-Page/commit/d08fa87092cd49c937b7085e1265b2992f19451e))
 
 
 <a name="3.0.2"></a>
