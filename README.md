@@ -11,17 +11,14 @@
   <a href="https://github.com/ericksantos12/Neocities-Page/commits/main">
     <img src="https://img.shields.io/github/last-commit/ericksantos12/Neocities-Page?style=for-the-badge&color=cba6f7&logoColor=D9E0EE&labelColor=302D41" alt="Last Commit">
   </a>
-  <a href="https://github.com/ericksantos12/Neocities-Page/stargazers">
+  <!-- <a href="https://github.com/ericksantos12/Neocities-Page/stargazers">
     <img src="https://img.shields.io/github/stars/ericksantos12/Neocities-Page?style=for-the-badge&color=f38ba8&logoColor=D9E0EE&labelColor=302D41" alt="Stars">
-  </a>
+  </a> -->
   <a href="https://github.com/ericksantos12/Neocities-Page/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/ericksantos12/Neocities-Page?style=for-the-badge&color=a6e3a1&logoColor=D9E0EE&labelColor=302D41" alt="License">
+    <img src="https://img.shields.io/github/license/ericksantos12/Neocities-Page?style=for-the-badge&color=eba0ac&logoColor=D9E0EE&labelColor=302D41" alt="License">
   </a>
   <a href="https://gitmoji.dev">
     <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge&color=f9e2af&logoColor=D9E0EE&labelColor=302D41" alt="Gitmoji">
-  </a>
-  <a href="https://github.com/frinyvonnick/gitmoji-changelog">
-    <img src="https://img.shields.io/badge/Changelog-gitmoji-brightgreen.svg?style=for-the-badge&color=fab387&logoColor=D9E0EE&labelColor=302D41" alt="Gitmoji Changelog">
   </a>
 </div>
 
@@ -42,4 +39,4 @@ Site criado com o intuito de ter um cantinho na comunidade do neocities, e tamb�
 - [98.css](https://jdan.github.io/98.css/)
 - [Windows 98 Icon Viewer](https://win98icons.alexmeub.com)
 - [W3Schools](https://www.w3schools.com)
-
+- [Gitmoji Changelog](https://github.com/frinyvonnick/gitmoji-changelog)
