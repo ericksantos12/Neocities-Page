@@ -3,10 +3,15 @@
 <a name="next"></a>
 ## next
 
+### Changed
+
+- 💬 update setup specs [[2eaf617](https://github.com/ericksantos12/Neocities-Page/commit/2eaf6174697c443d6929403fd4226363aebb54bf)]
+
 ### Miscellaneous
 
+- 📝 update changelog [[2269935](https://github.com/ericksantos12/Neocities-Page/commit/2269935cba7c247d64a676ec0f8b49a2b69126b0)]
+    * 📝 update changelog ([d08fa87](https://github.com/ericksantos12/Neocities-Page/commit/d08fa87092cd49c937b7085e1265b2992f19451e))
 -  Merge branch &#x27;main&#x27; of https://github.com/ericksantos12/Neocities-Page [[6b3d185](https://github.com/ericksantos12/Neocities-Page/commit/6b3d1851277d37f5924d86a405b8d4284e9d1a5c)]
-- 📝 update changelog [[d08fa87](https://github.com/ericksantos12/Neocities-Page/commit/d08fa87092cd49c937b7085e1265b2992f19451e)]
 
 
 <a name="3.0.2"></a>
