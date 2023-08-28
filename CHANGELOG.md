@@ -5,12 +5,14 @@
 
 ### Changed
 
+- 💬 updated specs [[8399570](https://github.com/ericksantos12/Neocities-Page/commit/839957095f10b04aff0ab4c079647a0d6e320288)]
 - 🍱 added icon [[3f92d58](https://github.com/ericksantos12/Neocities-Page/commit/3f92d589a99e58de2dc8ae66ec705e76c8516082)]
 - 💬 update setup specs [[2eaf617](https://github.com/ericksantos12/Neocities-Page/commit/2eaf6174697c443d6929403fd4226363aebb54bf)]
 
 ### Miscellaneous
 
-- 📝 update changelog [[44e3b2d](https://github.com/ericksantos12/Neocities-Page/commit/44e3b2d99bf5bd96f87c205e7e8a3d4e9d25bd0b)]
+- 📝 update changelog [[f023ff0](https://github.com/ericksantos12/Neocities-Page/commit/f023ff066c2e381d27c35a25cbf5fc00b115a97e)]
+    * 📝 update changelog ([44e3b2d](https://github.com/ericksantos12/Neocities-Page/commit/44e3b2d99bf5bd96f87c205e7e8a3d4e9d25bd0b))
     * 📝 update changelog ([7269742](https://github.com/ericksantos12/Neocities-Page/commit/72697422df8e0c01f7e03036b581ad918d704e08))
     * 📝 update changelog ([2269935](https://github.com/ericksantos12/Neocities-Page/commit/2269935cba7c247d64a676ec0f8b49a2b69126b0))
     * 📝 update changelog ([d08fa87](https://github.com/ericksantos12/Neocities-Page/commit/d08fa87092cd49c937b7085e1265b2992f19451e))
