@@ -1,5 +1,14 @@
 # Changelog
 
+<a name="next"></a>
+## next
+
+### Miscellaneous
+
+- 📝 update changelog [[f8a1a2a](https://github.com/ericksantos12/Neocities-Page/commit/f8a1a2a392712cb02804582a091163b2ab4f885e)]
+- 🔀 🍱 ImgBot optimize images [[7d52bd4](https://github.com/ericksantos12/Neocities-Page/commit/7d52bd4348143052911c9876aba6b306262e855c)]
+
+
 <a name="3.0.3"></a>
 ## 3.0.3 (2023-11-20)
 
