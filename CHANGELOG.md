@@ -1,17 +1,19 @@
 # Changelog
 
-<a name="next"></a>
-## next
+<a name="3.0.3"></a>
+## 3.0.3 (2023-11-20)
 
 ### Changed
 
+- 🍱 added letterboxd badge [[e1190de](https://github.com/ericksantos12/Neocities-Page/commit/e1190deb403d1c71657896a90613b6913becd03b)]
 - 💬 updated specs [[8399570](https://github.com/ericksantos12/Neocities-Page/commit/839957095f10b04aff0ab4c079647a0d6e320288)]
 - 🍱 added icon [[3f92d58](https://github.com/ericksantos12/Neocities-Page/commit/3f92d589a99e58de2dc8ae66ec705e76c8516082)]
 - 💬 update setup specs [[2eaf617](https://github.com/ericksantos12/Neocities-Page/commit/2eaf6174697c443d6929403fd4226363aebb54bf)]
 
 ### Miscellaneous
 
-- 📝 update changelog [[f023ff0](https://github.com/ericksantos12/Neocities-Page/commit/f023ff066c2e381d27c35a25cbf5fc00b115a97e)]
+- 📝 update changelog [[daff57d](https://github.com/ericksantos12/Neocities-Page/commit/daff57d643bf8e552ebfb54d091eaa2238d561d3)]
+    * 📝 update changelog ([f023ff0](https://github.com/ericksantos12/Neocities-Page/commit/f023ff066c2e381d27c35a25cbf5fc00b115a97e))
     * 📝 update changelog ([44e3b2d](https://github.com/ericksantos12/Neocities-Page/commit/44e3b2d99bf5bd96f87c205e7e8a3d4e9d25bd0b))
     * 📝 update changelog ([7269742](https://github.com/ericksantos12/Neocities-Page/commit/72697422df8e0c01f7e03036b581ad918d704e08))
     * 📝 update changelog ([2269935](https://github.com/ericksantos12/Neocities-Page/commit/2269935cba7c247d64a676ec0f8b49a2b69126b0))
