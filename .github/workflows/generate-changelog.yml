@@ -1,9 +1,7 @@
 name: Generate Gitmoji Changelog
 
-on:
-  push:
-    branches:
-      - main
+on: 
+  workflow_dispatch:
 
 jobs:
   generate-changelog:
