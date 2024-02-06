@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy static content to Neocities
 
 on:
   workflow_dispatch:
@@ -6,6 +6,10 @@ on:
   push:
     branches:
       - main
+
+concurrency:
+  group: "neocities"
+  cancel-in-progress: false
 
 jobs:
   deploy:
