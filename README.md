@@ -30,8 +30,8 @@ Site criado com o intuito de ter um cantinho na comunidade do neocities, e tamb�
 
 <div align="center">
 
-| 🏠 [Homepage](https://ericksantos12.neocities.org) | ⌚ [Changelog](https://github.com/ericksantos12/Neocities-Page/blob/main/CHANGELOG.md) |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| 🏠 [Homepage](https://ericksantos12.neocities.org) |
+| ------------------------------------------------- |
 
 </div>
 
