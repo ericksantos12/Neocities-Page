@@ -58,6 +58,7 @@ Migrar site `public/` para React + Vite gerando HTML estático multi-page, compa
 - V21. Páginas com navbar ! ter preload no `<head>` com refs relativas `./assets/icons/{home,mari,guestbook,about,amandita}.png`.
 - V22. `not_found.html` e `404.html` ⊥ navbar/ícones/fundo index; ! preload + fundo relativo `./assets/majin.png`.
 - V23. `not_found.html` e `404.html` ⊥ fundo inline no `<body>`; fundo `majin.png` ! pertencer só `.not-found-page` cobrindo viewport desde topo.
+- V24. `not_found.html` e `404.html` ⊥ borda/padding global; página 404 ! ocupar viewport sem margem branca.
 
 ## §T
 | id | status | task | cites |
@@ -92,3 +93,4 @@ Migrar site `public/` para React + Vite gerando HTML estático multi-page, compa
 | B4 | 2026-05-08 | remoção dos preloads React também atrasou ícones navbar | V21 |
 | B5 | 2026-05-08 | `postbuild` aplicou preloads/fundo index em todas páginas; NotFound usou Layout ∴ 404 herdou navbar/fundo index | V22 |
 | B6 | 2026-05-08 | 404 tinha `majin.png` no body + `.not-found-page`; margin colapsou ∴ fundo duplicado/topo grande + tile encostado texto | V23 |
+| B7 | 2026-05-08 | `main { padding: 1rem; }` global vazou para 404 ∴ borda branca | V24 |

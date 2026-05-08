@@ -2,7 +2,7 @@ import AudioPlayer from '../components/AudioPlayer.jsx';
 
 export default function NotFound() {
   return (
-    <main>
+    <main className="not-found-main">
       <AudioPlayer src="https://cdn.discordapp.com/attachments/773512975788408842/1018603592598441995/majin.m4a" />
       <div className="not-found-page">
         <div className="not-found-content">

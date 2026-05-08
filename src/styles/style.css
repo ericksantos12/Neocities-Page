@@ -52,6 +52,10 @@ footer {
   padding-top: 35vh;
 }
 
+.not-found-main {
+  padding: 0;
+}
+
 .not-found-content {
   text-align: center;
   margin: 0;

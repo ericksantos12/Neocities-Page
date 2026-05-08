@@ -16,8 +16,13 @@ describe('static page rendering', () => {
     const html = renderPage('not_found.html').html;
 
     expect(html).toContain('ページが見つかりません');
+    expect(html).toContain('class="not-found-main"');
     expect(html).not.toContain('class="navbar"');
     expect(html).not.toContain('src="./assets/icons/home.png"');
+  });
+
+  it('keeps not found page free from global main padding', () => {
+    expect(readFileSync('src/styles/style.css', 'utf8')).toContain('.not-found-main {\n  padding: 0;\n}');
   });
 
   it('falls back to not found page for unknown files', () => {
