@@ -54,6 +54,8 @@ Migrar site `public/` para React + Vite gerando HTML estático multi-page, compa
 - V17. Interações runtime usam JS clássico/inline ou degradam sem quebrar renderização principal em `file://`.
 - V18. Refs locais em HTML/CSS final usam caminho relativo `./` ou `../`; ⊥ `/assets/...` ou `/css/...` em `dist/*`.
 - V19. `dist/*.html` ! declarar fundo principal com ref relativa `./assets/bg/cool_background.gif` no HTML final.
+- V20. Fundo principal ! ter preload `fetchpriority="high"` no `<head>`; HTML final ⊥ preloads automáticos de imagens dentro `#root`.
+- V21. Ícones críticos navbar ! ter preload no `<head>` com refs relativas `./assets/icons/{home,mari,guestbook,about,amandita}.png`.
 
 ## §T
 | id | status | task | cites |
@@ -84,3 +86,5 @@ Migrar site `public/` para React + Vite gerando HTML estático multi-page, compa
 |---|---|---|---|
 | B1 | 2026-05-08 | SSR `asset()` gerou `/assets/...`; `file://` buscou raiz disco ∴ imgs/fundo quebram | V18 |
 | B2 | 2026-05-08 | fundo só dependia CSS bundle/cache; usuário ainda via sem fundo | V19 |
+| B3 | 2026-05-08 | React SSR gerou muitos image preloads antes conteúdo; fundo sem prioridade ∴ carrega tarde | V20 |
+| B4 | 2026-05-08 | remoção dos preloads React também atrasou ícones navbar | V21 |

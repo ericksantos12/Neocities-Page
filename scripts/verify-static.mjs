@@ -3,6 +3,14 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const staticHtmlFiles = ['index.html', 'mari.html', 'guestbook.html', 'about.html', 'amandita.html', 'not_found.html', '404.html'];
+export const criticalImagePreloads = [
+  './assets/bg/cool_background.gif',
+  './assets/icons/home.png',
+  './assets/icons/mari.png',
+  './assets/icons/guestbook.png',
+  './assets/icons/about.png',
+  './assets/icons/amandita.png',
+];
 
 const scriptPath = fileURLToPath(import.meta.url);
 const root = dirname(dirname(scriptPath));
@@ -46,6 +54,16 @@ export function verifyStaticBuild(distDir = join(root, 'dist')) {
 
     if (!html.includes("background-image: url('./assets/bg/cool_background.gif')")) {
       errors.push(`${file} missing relative background image`);
+    }
+
+    for (const image of criticalImagePreloads) {
+      if (!html.includes(`<link rel="preload" as="image" href="${image}" fetchpriority="high" />`)) {
+        errors.push(`${file} missing high-priority image preload ${image}`);
+      }
+    }
+
+    if (/<div id="root">[\s\S]*?<link rel="preload" as="image"/i.test(html)) {
+      errors.push(`${file} has image preload inside root`);
     }
 
     for (const ref of findRootLocalRefs(html)) {

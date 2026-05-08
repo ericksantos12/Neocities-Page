@@ -38,6 +38,19 @@ describe('static page rendering', () => {
     expect(readFileSync('scripts/postbuild.mjs', 'utf8')).toContain("background-image: url('./assets/bg/cool_background.gif')");
   });
 
+  it('preloads only the background as a high-priority page asset', async () => {
+    const { readFileSync } = await import('node:fs');
+    const postbuild = readFileSync('scripts/postbuild.mjs', 'utf8');
+
+    expect(postbuild).toContain('./assets/bg/cool_background.gif');
+    expect(postbuild).toContain('./assets/icons/home.png');
+    expect(postbuild).toContain('./assets/icons/mari.png');
+    expect(postbuild).toContain('./assets/icons/guestbook.png');
+    expect(postbuild).toContain('./assets/icons/about.png');
+    expect(postbuild).toContain('./assets/icons/amandita.png');
+    expect(postbuild).toContain('replace(/<link rel="preload" as="image"');
+  });
+
   it('uses document navigation links in the navbar', () => {
     const html = renderPage('index.html').html;
 

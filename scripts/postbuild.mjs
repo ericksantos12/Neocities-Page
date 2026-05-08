@@ -24,16 +24,29 @@ if (!existsSync(rendererPath)) {
 const { renderPage } = await import(pathToFileURL(rendererPath));
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const cssFiles = [...new Set(Object.values(manifest).flatMap((entry) => entry.css ?? []))];
+const criticalImages = [
+  './assets/bg/cool_background.gif',
+  './assets/icons/home.png',
+  './assets/icons/mari.png',
+  './assets/icons/guestbook.png',
+  './assets/icons/about.png',
+  './assets/icons/amandita.png',
+];
 
 function renderDocument(file) {
   const page = renderPage(file);
   const styles = cssFiles.map((cssFile) => `    <link rel="stylesheet" href="./${cssFile}" />`).join('\n');
+  const html = page.html.replace(/<link rel="preload" as="image" href="[^"]+"\/>/g, '');
+  const imagePreloads = criticalImages
+    .map((image) => `    <link rel="preload" as="image" href="${image}" fetchpriority="high" />`)
+    .join('\n');
 
   return `<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+${imagePreloads}
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 ${styles}
@@ -42,7 +55,7 @@ ${styles}
     <title>${page.title} - Erick Santos</title>
   </head>
   <body style="background-image: url('./assets/bg/cool_background.gif')">
-    <div id="root">${page.html}</div>
+    <div id="root">${html}</div>
   </body>
 </html>
 `;
