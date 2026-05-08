@@ -23,6 +23,15 @@ describe('static page rendering', () => {
     expect(renderPage('mari.html').html).toContain('data-slideshow="true"');
   });
 
+  it('renders local assets as file-safe relative refs', () => {
+    const html = renderPage('index.html').html;
+
+    expect(html).toContain('href="./assets/icons/home.png"');
+    expect(html).toContain('src="./assets/icons/home.png"');
+    expect(html).not.toContain('href="/assets/');
+    expect(html).not.toContain('src="/assets/');
+  });
+
   it('uses document navigation links in the navbar', () => {
     const html = renderPage('index.html').html;
 

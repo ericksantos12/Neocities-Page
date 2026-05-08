@@ -15,6 +15,14 @@ function cleanRef(ref) {
   return ref.replace(/^\.\//, '').split('#')[0].split('?')[0];
 }
 
+function findRootLocalRefs(content) {
+  return Array.from(content.matchAll(/(?:href|src)=['"](\/(?:assets|css|js)\/[^'"]+)['"]/g), (match) => match[1]);
+}
+
+function findRootLocalCssRefs(content) {
+  return Array.from(content.matchAll(/url\(['"]?(\/(?:assets|css|js)\/[^)'"]+)['"]?\)/g), (match) => match[1]);
+}
+
 export function verifyStaticBuild(distDir = join(root, 'dist')) {
   const errors = [];
 
@@ -36,6 +44,10 @@ export function verifyStaticBuild(distDir = join(root, 'dist')) {
       errors.push(`${file} missing static root content`);
     }
 
+    for (const ref of findRootLocalRefs(html)) {
+      errors.push(`${file} uses root local ref ${ref}`);
+    }
+
     for (const match of html.matchAll(/(?:href|src)=["']([^"']+)["']/g)) {
       const ref = match[1];
 
@@ -54,7 +66,23 @@ export function verifyStaticBuild(distDir = join(root, 'dist')) {
     }
   }
 
+  for (const cssFile of findCssFiles(distDir)) {
+    const css = readFileSync(join(distDir, cssFile), 'utf8');
+
+    for (const ref of findRootLocalCssRefs(css)) {
+      errors.push(`${cssFile} uses root local ref ${ref}`);
+    }
+  }
+
   return errors;
+}
+
+function findCssFiles(distDir) {
+  const html = staticHtmlFiles
+    .map((file) => (existsSync(join(distDir, file)) ? readFileSync(join(distDir, file), 'utf8') : ''))
+    .join('\n');
+
+  return [...new Set(Array.from(html.matchAll(/href=["']\.\/([^"']+\.css)["']/g), (match) => match[1]))];
 }
 
 if (process.argv[1] && scriptPath === process.argv[1]) {

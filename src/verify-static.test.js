@@ -45,4 +45,18 @@ describe('static build verifier', () => {
 
     expect(verifyStaticBuild(dist)).toContain('index.html has external module script');
   });
+
+  it('fails on root-local refs that break file URLs', () => {
+    const dist = createDist();
+    writeFileSync(join(dist, 'index.html'), '<div id="root"><img src="/assets/foo.png"></div>');
+
+    expect(verifyStaticBuild(dist)).toContain('index.html uses root local ref /assets/foo.png');
+  });
+
+  it('fails on root-local CSS refs that break file URLs', () => {
+    const dist = createDist();
+    writeFileSync(join(dist, 'assets', 'index.css'), 'body{background-image:url(/assets/bg/cool_background.gif)}');
+
+    expect(verifyStaticBuild(dist)).toContain('assets/index.css uses root local ref /assets/bg/cool_background.gif');
+  });
 });
