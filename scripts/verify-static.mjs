@@ -3,14 +3,16 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const staticHtmlFiles = ['index.html', 'mari.html', 'guestbook.html', 'about.html', 'amandita.html', 'not_found.html', '404.html'];
-export const criticalImagePreloads = [
-  './assets/bg/cool_background.gif',
+export const navbarImagePreloads = [
   './assets/icons/home.png',
   './assets/icons/mari.png',
   './assets/icons/guestbook.png',
   './assets/icons/about.png',
   './assets/icons/amandita.png',
 ];
+
+export const indexBackground = './assets/bg/cool_background.gif';
+export const notFoundBackground = './assets/majin.png';
 
 const scriptPath = fileURLToPath(import.meta.url);
 const root = dirname(dirname(scriptPath));
@@ -52,13 +54,30 @@ export function verifyStaticBuild(distDir = join(root, 'dist')) {
       errors.push(`${file} missing static root content`);
     }
 
-    if (!html.includes("background-image: url('./assets/bg/cool_background.gif')")) {
-      errors.push(`${file} missing relative background image`);
+    const isNotFound = file === 'not_found.html' || file === '404.html';
+    const expectedBackground = isNotFound ? notFoundBackground : indexBackground;
+
+    if (!html.includes(`background-image: url('${expectedBackground}')`)) {
+      errors.push(`${file} missing relative background image ${expectedBackground}`);
     }
 
-    for (const image of criticalImagePreloads) {
+    const expectedPreloads = isNotFound ? [notFoundBackground] : [indexBackground, ...navbarImagePreloads];
+
+    for (const image of expectedPreloads) {
       if (!html.includes(`<link rel="preload" as="image" href="${image}" fetchpriority="high" />`)) {
         errors.push(`${file} missing high-priority image preload ${image}`);
+      }
+    }
+
+    if (isNotFound) {
+      for (const image of [indexBackground, ...navbarImagePreloads]) {
+        if (html.includes(`<link rel="preload" as="image" href="${image}"`)) {
+          errors.push(`${file} has wrong page preload ${image}`);
+        }
+      }
+
+      if (html.includes('class="navbar"')) {
+        errors.push(`${file} has navbar`);
       }
     }
 

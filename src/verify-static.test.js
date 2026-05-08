@@ -2,7 +2,7 @@ import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { afterEach, describe, expect, it } from 'vitest';
-import { criticalImagePreloads, staticHtmlFiles, verifyStaticBuild } from '../scripts/verify-static.mjs';
+import { indexBackground, navbarImagePreloads, notFoundBackground, staticHtmlFiles, verifyStaticBuild } from '../scripts/verify-static.mjs';
 
 let tmpDir;
 
@@ -14,14 +14,18 @@ function createDist() {
   mkdirSync(join(tmpDir, 'js'), { recursive: true });
   writeFileSync(join(tmpDir, 'assets', 'index.css'), 'body{}');
   writeFileSync(join(tmpDir, 'assets', 'bg', 'cool_background.gif'), 'gif');
+  writeFileSync(join(tmpDir, 'assets', 'majin.png'), 'png');
   for (const icon of ['home.png', 'mari.png', 'guestbook.png', 'about.png', 'amandita.png']) {
     writeFileSync(join(tmpDir, 'assets', 'icons', icon), 'png');
   }
   writeFileSync(join(tmpDir, 'js', 'site.js'), '');
 
   for (const file of staticHtmlFiles) {
-    const preloads = criticalImagePreloads.map((image) => `<link rel="preload" as="image" href="${image}" fetchpriority="high" />`).join('');
-    writeFileSync(join(tmpDir, file), `<head>${preloads}</head><body style="background-image: url('./assets/bg/cool_background.gif')"><div id="root"><main>ok</main></div><link rel="stylesheet" href="./assets/index.css"><script src="./js/site.js"></script></body>`);
+    const isNotFound = file === 'not_found.html' || file === '404.html';
+    const images = isNotFound ? [notFoundBackground] : [indexBackground, ...navbarImagePreloads];
+    const background = isNotFound ? notFoundBackground : indexBackground;
+    const preloads = images.map((image) => `<link rel="preload" as="image" href="${image}" fetchpriority="high" />`).join('');
+    writeFileSync(join(tmpDir, file), `<head>${preloads}</head><body style="background-image: url('${background}')"><div id="root"><main>ok</main></div><link rel="stylesheet" href="./assets/index.css"><script src="./js/site.js"></script></body>`);
   }
 
   return tmpDir;
@@ -71,7 +75,7 @@ describe('static build verifier', () => {
     const dist = createDist();
     writeFileSync(join(dist, 'index.html'), '<div id="root"><main>ok</main></div>');
 
-    expect(verifyStaticBuild(dist)).toContain('index.html missing relative background image');
+    expect(verifyStaticBuild(dist)).toContain('index.html missing relative background image ./assets/bg/cool_background.gif');
   });
 
   it('fails when HTML misses high-priority background preload', () => {
@@ -83,19 +87,33 @@ describe('static build verifier', () => {
 
   it('fails when HTML misses navbar icon preloads', () => {
     const dist = createDist();
-    const preloads = criticalImagePreloads
+    const preloads = [indexBackground, ...navbarImagePreloads]
       .filter((image) => image !== './assets/icons/home.png')
       .map((image) => `<link rel="preload" as="image" href="${image}" fetchpriority="high" />`)
       .join('');
 
-    writeFileSync(join(dist, 'index.html'), `<head>${preloads}</head><body style="background-image: url('./assets/bg/cool_background.gif')"><div id="root"><main>ok</main></div></body>`);
+    writeFileSync(join(dist, 'index.html'), `<head>${preloads}</head><body style="background-image: url('${indexBackground}')"><div id="root"><main>ok</main></div></body>`);
 
     expect(verifyStaticBuild(dist)).toContain('index.html missing high-priority image preload ./assets/icons/home.png');
   });
 
+  it('fails when not found pages inherit index preloads or navbar', () => {
+    const dist = createDist();
+    const preloads = [notFoundBackground, indexBackground, ...navbarImagePreloads]
+      .map((image) => `<link rel="preload" as="image" href="${image}" fetchpriority="high" />`)
+      .join('');
+    writeFileSync(join(dist, 'not_found.html'), `<head>${preloads}</head><body style="background-image: url('${notFoundBackground}')"><div id="root"><nav class="navbar"></nav><main>ok</main></div></body>`);
+
+    expect(verifyStaticBuild(dist)).toContain('not_found.html has wrong page preload ./assets/bg/cool_background.gif');
+    expect(verifyStaticBuild(dist)).toContain('not_found.html has navbar');
+  });
+
   it('fails when React image preloads remain inside root', () => {
     const dist = createDist();
-    writeFileSync(join(dist, 'index.html'), '<head><link rel="preload" as="image" href="./assets/bg/cool_background.gif" fetchpriority="high" /></head><body style="background-image: url(\'./assets/bg/cool_background.gif\')"><div id="root"><link rel="preload" as="image" href="./assets/foo.gif"/><main>ok</main></div></body>');
+    const preloads = [indexBackground, ...navbarImagePreloads]
+      .map((image) => `<link rel="preload" as="image" href="${image}" fetchpriority="high" />`)
+      .join('');
+    writeFileSync(join(dist, 'index.html'), `<head>${preloads}</head><body style="background-image: url('${indexBackground}')"><div id="root"><link rel="preload" as="image" href="./assets/foo.gif"/><main>ok</main></div></body>`);
 
     expect(verifyStaticBuild(dist)).toContain('index.html has image preload inside root');
   });

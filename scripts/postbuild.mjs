@@ -25,7 +25,6 @@ const { renderPage } = await import(pathToFileURL(rendererPath));
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const cssFiles = [...new Set(Object.values(manifest).flatMap((entry) => entry.css ?? []))];
 const criticalImages = [
-  './assets/bg/cool_background.gif',
   './assets/icons/home.png',
   './assets/icons/mari.png',
   './assets/icons/guestbook.png',
@@ -33,13 +32,30 @@ const criticalImages = [
   './assets/icons/amandita.png',
 ];
 
+function getPageImages(file) {
+  if (file === 'not_found.html' || file === '404.html') {
+    return ['./assets/majin.png'];
+  }
+
+  return ['./assets/bg/cool_background.gif', ...criticalImages];
+}
+
+function getBodyStyle(file) {
+  if (file === 'not_found.html' || file === '404.html') {
+    return "background-image: url('./assets/majin.png')";
+  }
+
+  return "background-image: url('./assets/bg/cool_background.gif')";
+}
+
 function renderDocument(file) {
   const page = renderPage(file);
   const styles = cssFiles.map((cssFile) => `    <link rel="stylesheet" href="./${cssFile}" />`).join('\n');
   const html = page.html.replace(/<link rel="preload" as="image" href="[^"]+"\/>/g, '');
-  const imagePreloads = criticalImages
+  const imagePreloads = getPageImages(file)
     .map((image) => `    <link rel="preload" as="image" href="${image}" fetchpriority="high" />`)
     .join('\n');
+  const bodyStyle = getBodyStyle(file);
 
   return `<!doctype html>
 <html lang="pt-br">
@@ -54,7 +70,7 @@ ${styles}
     <script src="./js/site.js" defer></script>
     <title>${page.title} - Erick Santos</title>
   </head>
-  <body style="background-image: url('./assets/bg/cool_background.gif')">
+  <body style="${bodyStyle}">
     <div id="root">${html}</div>
   </body>
 </html>

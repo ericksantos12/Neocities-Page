@@ -12,6 +12,14 @@ describe('static page rendering', () => {
     expect(renderPage('not_found.html').html).toContain('ページが見つかりません');
   });
 
+  it('renders not found without the shared navbar', () => {
+    const html = renderPage('not_found.html').html;
+
+    expect(html).toContain('ページが見つかりません');
+    expect(html).not.toContain('class="navbar"');
+    expect(html).not.toContain('src="./assets/icons/home.png"');
+  });
+
   it('falls back to not found page for unknown files', () => {
     expect(renderPage('missing.html').html).toContain('ページが見つかりません');
   });
@@ -43,6 +51,7 @@ describe('static page rendering', () => {
     const postbuild = readFileSync('scripts/postbuild.mjs', 'utf8');
 
     expect(postbuild).toContain('./assets/bg/cool_background.gif');
+    expect(postbuild).toContain('./assets/majin.png');
     expect(postbuild).toContain('./assets/icons/home.png');
     expect(postbuild).toContain('./assets/icons/mari.png');
     expect(postbuild).toContain('./assets/icons/guestbook.png');
