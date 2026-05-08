@@ -1,3 +1,14 @@
+import Layout from '../components/Layout.jsx';
+
 export default function Mari() {
-  return <h1>Mari</h1>;
+  return (
+    <Layout title="Mari" glitchId="alpha">
+      <div className="window">
+        <div className="title-bar">
+          <div className="title-bar-text">Mari</div>
+        </div>
+        <div className="window-body">Mari migration pending.</div>
+      </div>
+    </Layout>
+  );
 }
