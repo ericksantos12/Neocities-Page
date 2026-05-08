@@ -4,7 +4,7 @@
   "description": "Este site foi criado com o intuito de ter um cantinho nesta comunidade, e também adquirir aprendizados sobre HTML e CSS",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/postbuild.mjs",
     "preview": "vite preview",
     "test": "vitest --run",
     "check": "npm run test && npm run build"

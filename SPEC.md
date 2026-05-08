@@ -57,7 +57,7 @@ Migrar site estático `public/` para app React + Vite mantendo visual, conteúdo
 | T11 | x | Configurar scripts `dev`, `build`, `preview` e checks | V1,V12,I.cli |
 | T12 | x | Atualizar workflows deploy para output Vite | V11,I.deploy |
 | T13 | x | Validar build, rotas, assets, embeds, mobile e links externos | V1,V2,V4,V5,V6,V7,I.embeds |
-| T14 | . | Remover HTML/JS legado só após equivalência validada | V2,V5,V8,V9,V10 |
+| T14 | x | Remover HTML/JS legado só após equivalência validada | V2,V5,V8,V9,V10 |
 
 ## §B
 | id | date | cause | fix |
