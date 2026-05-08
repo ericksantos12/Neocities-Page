@@ -93,14 +93,9 @@ export default function Home() {
             <div className="window-content">
               <a href={asset('assets/erick.gif')} download="erick.gif"><img src={asset('assets/erick.gif')} width="88" height="31" alt="Erick button" /></a><br />
               <hr />
-              <img src="https://boodlebox.neocities.org/notepad2.gif" width="88" height="31" alt="" />
-              <img src="https://boodlebox.neocities.org/eyes.gif" width="88" height="31" alt="" />
-              <img src="https://boodlebox.neocities.org/hell2.gif" width="88" height="31" alt="" />
               <img src={asset('assets/88x31/badapple.gif')} width="88" height="31" alt="" />
               <img src={asset('assets/88x31/fubutton16.gif')} width="88" height="31" alt="" />
               <hr />
-              <a href="https://linktr.ee/zaadworks" target="_blank" rel="noopener noreferrer"><img src="https://cdn.discordapp.com/attachments/228544514837577732/1039302434994008094/binbows12fps.gif" width="88" height="31" alt="" /></a>
-              <a href="https://ajota.neocities.org/" target="_blank" rel="noreferrer"><img src="https://cdn.discordapp.com/attachments/893675902846763059/959256548100694056/Baiken.png" width="88" height="31" alt="" /></a>
               <a href="https://clooko.neocities.org" target="_blank" rel="noreferrer"><img src={asset('assets/88x31/clooko.png')} alt="Clooko's Button" width="88" height="31" /></a>
               <hr />
               <a href="https://gifypet.neocities.org/" target="_blank" rel="noreferrer"><img src="https://gifypet.neocities.org/images/badge.gif" width="88" height="31" alt="" /></a>
