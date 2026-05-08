@@ -14,7 +14,7 @@ function createDist() {
   writeFileSync(join(tmpDir, 'js', 'site.js'), '');
 
   for (const file of staticHtmlFiles) {
-    writeFileSync(join(tmpDir, file), '<div id="root"><main>ok</main></div><link rel="stylesheet" href="./assets/index.css"><script src="./js/site.js"></script>');
+    writeFileSync(join(tmpDir, file), '<body style="background-image: url(\'./assets/bg/cool_background.gif\')"><div id="root"><main>ok</main></div><link rel="stylesheet" href="./assets/index.css"><script src="./js/site.js"></script></body>');
   }
 
   return tmpDir;
@@ -58,5 +58,12 @@ describe('static build verifier', () => {
     writeFileSync(join(dist, 'assets', 'index.css'), 'body{background-image:url(/assets/bg/cool_background.gif)}');
 
     expect(verifyStaticBuild(dist)).toContain('assets/index.css uses root local ref /assets/bg/cool_background.gif');
+  });
+
+  it('fails when HTML misses the relative background image', () => {
+    const dist = createDist();
+    writeFileSync(join(dist, 'index.html'), '<div id="root"><main>ok</main></div>');
+
+    expect(verifyStaticBuild(dist)).toContain('index.html missing relative background image');
   });
 });

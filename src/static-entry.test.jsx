@@ -32,6 +32,12 @@ describe('static page rendering', () => {
     expect(html).not.toContain('src="/assets/');
   });
 
+  it('renders a file-safe relative background on final documents', async () => {
+    const { readFileSync } = await import('node:fs');
+
+    expect(readFileSync('scripts/postbuild.mjs', 'utf8')).toContain("background-image: url('./assets/bg/cool_background.gif')");
+  });
+
   it('uses document navigation links in the navbar', () => {
     const html = renderPage('index.html').html;
 

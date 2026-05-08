@@ -53,6 +53,7 @@ Migrar site `public/` para React + Vite gerando HTML estático multi-page, compa
 - V16. React permanece fonte de autoria/build, mas HTML final não depende de client router para escolher página.
 - V17. Interações runtime usam JS clássico/inline ou degradam sem quebrar renderização principal em `file://`.
 - V18. Refs locais em HTML/CSS final usam caminho relativo `./` ou `../`; ⊥ `/assets/...` ou `/css/...` em `dist/*`.
+- V19. `dist/*.html` ! declarar fundo principal com ref relativa `./assets/bg/cool_background.gif` no HTML final.
 
 ## §T
 | id | status | task | cites |
@@ -82,3 +83,4 @@ Migrar site `public/` para React + Vite gerando HTML estático multi-page, compa
 | id | date | cause | fix |
 |---|---|---|---|
 | B1 | 2026-05-08 | SSR `asset()` gerou `/assets/...`; `file://` buscou raiz disco ∴ imgs/fundo quebram | V18 |
+| B2 | 2026-05-08 | fundo só dependia CSS bundle/cache; usuário ainda via sem fundo | V19 |

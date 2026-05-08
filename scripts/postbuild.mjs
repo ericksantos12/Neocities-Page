@@ -41,7 +41,7 @@ ${styles}
     <script src="./js/site.js" defer></script>
     <title>${page.title} - Erick Santos</title>
   </head>
-  <body>
+  <body style="background-image: url('./assets/bg/cool_background.gif')">
     <div id="root">${page.html}</div>
   </body>
 </html>

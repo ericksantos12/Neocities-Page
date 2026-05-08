@@ -44,6 +44,10 @@ export function verifyStaticBuild(distDir = join(root, 'dist')) {
       errors.push(`${file} missing static root content`);
     }
 
+    if (!html.includes("background-image: url('./assets/bg/cool_background.gif')")) {
+      errors.push(`${file} missing relative background image`);
+    }
+
     for (const ref of findRootLocalRefs(html)) {
       errors.push(`${file} uses root local ref ${ref}`);
     }
