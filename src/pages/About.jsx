@@ -2,9 +2,10 @@ import Layout from '../components/Layout.jsx';
 import Age from '../components/Age.jsx';
 import AudioPlayer from '../components/AudioPlayer.jsx';
 import GoatCounter from '../components/GoatCounter.jsx';
+import { getSessionValue } from '../utils/storage.js';
 
 export default function About() {
-  const easterFound = sessionStorage.getItem('easterFound');
+  const easterFound = getSessionValue('easterFound');
 
   return (
     <Layout title="About" glitchId="gamma">

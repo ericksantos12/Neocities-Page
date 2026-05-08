@@ -12,12 +12,12 @@ export default function Slideshow({ images }) {
   }
 
   return (
-    <div id="slide">
-      <button id="prev" type="button" onClick={() => changeImage(-1)}>
+    <div id="slide" data-slideshow="true">
+      <button id="prev" type="button" data-slide-prev="true" onClick={() => changeImage(-1)}>
         &#10094;
       </button>
-      <span id="count">{index + 1} of {images.length}</span>
-      <button id="next" type="button" onClick={() => changeImage(1)}>
+      <span id="count" data-slide-count="true">{index + 1} of {images.length}</span>
+      <button id="next" type="button" data-slide-next="true" onClick={() => changeImage(1)}>
         &#10095;
       </button>
       {images.map((src, imageIndex) => (

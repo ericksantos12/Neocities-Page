@@ -38,6 +38,7 @@ function renderDocument(file) {
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 ${styles}
     <script data-goatcounter="https://ericksantos12.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="./js/site.js" defer></script>
     <title>${page.title} - Erick Santos</title>
   </head>
   <body>

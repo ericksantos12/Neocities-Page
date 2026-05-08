@@ -13,7 +13,7 @@ export default function AudioPlayer({ src, loop = false }) {
   }
 
   return (
-    <audio autoPlay loop={loop} id="bg" src={src} type="audio/mpeg">
+    <audio autoPlay loop={loop} id="bg" src={src} type="audio/mpeg" data-audio-volume="0.06">
       your browser doesn't support audio :(
     </audio>
   );

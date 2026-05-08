@@ -1,6 +1,7 @@
 import Layout from '../components/Layout.jsx';
 import AudioPlayer from '../components/AudioPlayer.jsx';
 import GoatCounter from '../components/GoatCounter.jsx';
+import { asset } from '../utils/assets.js';
 
 export default function Amandita() {
   return (
@@ -20,15 +21,15 @@ export default function Amandita() {
         <div className="window-body">
           <div className="window-content">
             <div className="content-title">
-              <img src="/assets/titles/Tribute_to_G_.gif" className="title-gif" alt="" />
+              <img src={asset('assets/titles/Tribute_to_G_.gif')} className="title-gif" alt="" />
             </div>
-            <img src="/assets/heart gifs/loveline.gif" className="divider amandita-divider" alt="" />
+            <img src={asset('assets/heart gifs/loveline.gif')} className="divider amandita-divider" alt="" />
             <div className="kiss-image">
-              <img src="/assets/heart gifs/love.gif" width="20%" alt="" />
+              <img src={asset('assets/heart gifs/love.gif')} width="20%" alt="" />
               <img src="https://ericksantos12.github.io/amandita/img/gabi%20gifs/kiss.gif" alt="Erick Kissing Gabi retro gif" width="50%" />
-              <img src="/assets/heart gifs/love.gif" width="20%" alt="" />
+              <img src={asset('assets/heart gifs/love.gif')} width="20%" alt="" />
             </div>
-            <img src="/assets/heart gifs/loveline.gif" className="divider amandita-divider" alt="" />
+            <img src={asset('assets/heart gifs/loveline.gif')} className="divider amandita-divider" alt="" />
             <p><em>Diante da vastidão do tempo e da imensidão do universo, é um imenso prazer para mim dividir um planeta e uma época com você.</em></p>
             <p>— Carl Sagan</p>
             <br />

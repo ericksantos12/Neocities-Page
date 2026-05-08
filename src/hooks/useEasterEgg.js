@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
+import { getSessionValue, setSessionValue } from '../utils/storage.js';
 
 const eggIds = ['alpha', 'beta', 'gamma'];
 
 export default function useEasterEgg() {
-  const [easterFound, setEasterFound] = useState(() => sessionStorage.getItem('easterFound') === 'true');
+  const [easterFound, setEasterFound] = useState(() => getSessionValue('easterFound') === 'true');
 
   useEffect(() => {
     if (easterFound) {
-      sessionStorage.setItem('easterFound', 'true');
+      setSessionValue('easterFound', 'true');
     }
   }, [easterFound]);
 
@@ -16,8 +17,8 @@ export default function useEasterEgg() {
       return;
     }
 
-    sessionStorage.setItem(id, 'true');
-    const allFound = eggIds.every((eggId) => sessionStorage.getItem(eggId) === 'true');
+    setSessionValue(id, 'true');
+    const allFound = eggIds.every((eggId) => getSessionValue(eggId) === 'true');
 
     if (allFound && !easterFound) {
       const foundAudio = new Audio('https://cdn.discordapp.com/attachments/334598557145366528/1108203307433992232/chest_opening.mp3');

@@ -11,5 +11,5 @@ export function getAge(dateString, now = new Date()) {
 }
 
 export default function Age({ birthDate = '2003-04-08' }) {
-  return <span id="age">{getAge(birthDate)}</span>;
+  return <span id="age" data-age-birth={birthDate}>{getAge(birthDate)}</span>;
 }
