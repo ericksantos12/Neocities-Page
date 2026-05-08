@@ -1,7 +1,7 @@
 import { asset } from '../utils/assets.js';
 
 const baseNavItems = [
-  { href: './', icon: asset('assets/icons/home.png'), alt: 'Retro Computer Icon', text: 'Home' },
+  { href: 'index.html', icon: asset('assets/icons/home.png'), alt: 'Retro Computer Icon', text: 'Home' },
   { href: 'mari.html', icon: asset('assets/icons/mari.png'), alt: 'Retro Document Folder Icon', text: 'Mari' },
   { href: 'guestbook.html', icon: asset('assets/icons/guestbook.png'), alt: 'Retro Notepad Icon', text: 'Guestbook' },
   { href: 'about.html', icon: asset('assets/icons/about.png'), alt: 'Retro Question Mark Book Icon', text: 'About' },

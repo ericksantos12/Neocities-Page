@@ -9,7 +9,7 @@ describe('migration validation', () => {
   it('renders navbar links including unlocked Amandita link', () => {
     render(<Navbar showEasterItem />);
 
-    expect(screen.getByRole('link', { name: /Home/i })).toHaveAttribute('href', './');
+    expect(screen.getByRole('link', { name: /Home/i })).toHaveAttribute('href', 'index.html');
     expect(screen.getByRole('link', { name: /Mari/i })).toHaveAttribute('href', 'mari.html');
     expect(screen.getByRole('link', { name: /Guestbook/i })).toHaveAttribute('href', 'guestbook.html');
     expect(screen.getByRole('link', { name: /About/i })).toHaveAttribute('href', 'about.html');

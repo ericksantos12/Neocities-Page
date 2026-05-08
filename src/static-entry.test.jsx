@@ -21,4 +21,14 @@ describe('static page rendering', () => {
     expect(renderPage('index.html').html).toContain('data-egg-id="alpha"');
     expect(renderPage('mari.html').html).toContain('data-slideshow="true"');
   });
+
+  it('uses document navigation links in the navbar', () => {
+    const html = renderPage('index.html').html;
+
+    expect(html).toContain('href="index.html"');
+    expect(html).toContain('href="mari.html"');
+    expect(html).toContain('href="guestbook.html"');
+    expect(html).toContain('href="about.html"');
+    expect(html).not.toContain('href="./"');
+  });
 });
