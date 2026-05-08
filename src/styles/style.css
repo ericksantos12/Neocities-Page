@@ -34,6 +34,57 @@ footer {
   margin: 2rem 0;
 }
 
+.kiss-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amandita-divider {
+  width: 80%;
+}
+
+.not-found-page {
+  background-image: url('/assets/majin.png');
+  background-size: 8em;
+  min-height: 100vh;
+}
+
+.not-found-content {
+  text-align: center;
+  margin: 35vh 0;
+}
+
+.not-found-content h1 {
+  font-family: 'Klee One', cursive;
+  color: white;
+  margin-bottom: -10px;
+  font-size: 5.5em;
+}
+
+.not-found-content p {
+  font-size: 1.5em;
+  text-align: right;
+  margin-right: 25vw;
+}
+
+.not-found-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.secret-item {
+  display: none;
+}
+
+.secret-item.is-visible {
+  display: block;
+}
+
+.secret-item a {
+  color: #964d2c;
+}
+
 #slide img {
   margin: 5vh auto;
   display: none;
@@ -58,6 +109,10 @@ footer {
   #slide button {
     height: 4rem;
   }
+
+  .not-found-content h1 {
+    font-size: 3em;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -73,5 +128,11 @@ footer {
   .window {
     margin: 0 auto;
     width: 50rem;
+  }
+
+  .about-body {
+    height: 50rem;
+    overflow: auto;
+    padding: 0 1rem;
   }
 }

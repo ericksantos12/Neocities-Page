@@ -1,16 +1,14 @@
 import Layout from '../components/Layout.jsx';
+import AudioPlayer from '../components/AudioPlayer.jsx';
 
 export default function NotFound() {
   return (
     <Layout title="Page Not Found">
-      <div className="window">
-        <div className="title-bar">
-          <div className="title-bar-text">Page Not Found</div>
-        </div>
-        <div className="window-body">
-          <p>
-            <a href="./">go back</a>
-          </p>
+      <AudioPlayer src="https://cdn.discordapp.com/attachments/773512975788408842/1018603592598441995/majin.m4a" />
+      <div className="not-found-page">
+        <div className="not-found-content">
+          <h1>ページが見つかりません</h1>
+          <p><a href="./">go back</a></p>
         </div>
       </div>
     </Layout>

@@ -52,7 +52,7 @@ Migrar site estático `public/` para app React + Vite mantendo visual, conteúdo
 | T6 | x | Migrar Home para componente React equivalente | V2,V6,V8,V9,I.analytics,I.js |
 | T7 | x | Migrar Mari e slideshow para componente React | V2,V10,I.js,I.assets |
 | T8 | x | Migrar Guestbook mantendo HTML Comment Box | V2,V7,I.comments |
-| T9 | . | Migrar About, Amandita e Not Found | V2,I.routes,I.assets |
+| T9 | x | Migrar About, Amandita e Not Found | V2,I.routes,I.assets |
 | T10 | . | Migrar ou substituir scripts legados por hooks/componentes React | V8,V9,V10,I.js |
 | T11 | . | Configurar scripts `dev`, `build`, `preview` e checks | V1,V12,I.cli |
 | T12 | . | Atualizar workflows deploy para output Vite | V11,I.deploy |
