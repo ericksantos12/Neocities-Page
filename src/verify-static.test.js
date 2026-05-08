@@ -23,9 +23,9 @@ function createDist() {
   for (const file of staticHtmlFiles) {
     const isNotFound = file === 'not_found.html' || file === '404.html';
     const images = isNotFound ? [notFoundBackground] : [indexBackground, ...navbarImagePreloads];
-    const background = isNotFound ? notFoundBackground : indexBackground;
     const preloads = images.map((image) => `<link rel="preload" as="image" href="${image}" fetchpriority="high" />`).join('');
-    writeFileSync(join(tmpDir, file), `<head>${preloads}</head><body style="background-image: url('${background}')"><div id="root"><main>ok</main></div><link rel="stylesheet" href="./assets/index.css"><script src="./js/site.js"></script></body>`);
+    const body = isNotFound ? '<body>' : `<body style="background-image: url('${indexBackground}')">`;
+    writeFileSync(join(tmpDir, file), `<head>${preloads}</head>${body}<div id="root"><main>ok</main></div><link rel="stylesheet" href="./assets/index.css"><script src="./js/site.js"></script></body>`);
   }
 
   return tmpDir;
@@ -102,10 +102,18 @@ describe('static build verifier', () => {
     const preloads = [notFoundBackground, indexBackground, ...navbarImagePreloads]
       .map((image) => `<link rel="preload" as="image" href="${image}" fetchpriority="high" />`)
       .join('');
-    writeFileSync(join(dist, 'not_found.html'), `<head>${preloads}</head><body style="background-image: url('${notFoundBackground}')"><div id="root"><nav class="navbar"></nav><main>ok</main></div></body>`);
+    writeFileSync(join(dist, 'not_found.html'), `<head>${preloads}</head><body><div id="root"><nav class="navbar"></nav><main>ok</main></div></body>`);
 
     expect(verifyStaticBuild(dist)).toContain('not_found.html has wrong page preload ./assets/bg/cool_background.gif');
     expect(verifyStaticBuild(dist)).toContain('not_found.html has navbar');
+  });
+
+  it('fails when not found pages keep a body background style', () => {
+    const dist = createDist();
+    const preloads = `<link rel="preload" as="image" href="${notFoundBackground}" fetchpriority="high" />`;
+    writeFileSync(join(dist, '404.html'), `<head>${preloads}</head><body style="background-image: url('${notFoundBackground}')"><div id="root"><main>ok</main></div></body>`);
+
+    expect(verifyStaticBuild(dist)).toContain('404.html has body background style');
   });
 
   it('fails when React image preloads remain inside root', () => {

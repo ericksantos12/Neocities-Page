@@ -55,10 +55,12 @@ export function verifyStaticBuild(distDir = join(root, 'dist')) {
     }
 
     const isNotFound = file === 'not_found.html' || file === '404.html';
-    const expectedBackground = isNotFound ? notFoundBackground : indexBackground;
-
-    if (!html.includes(`background-image: url('${expectedBackground}')`)) {
-      errors.push(`${file} missing relative background image ${expectedBackground}`);
+    if (isNotFound) {
+      if (/<body\b[^>]*style=/i.test(html)) {
+        errors.push(`${file} has body background style`);
+      }
+    } else if (!html.includes(`background-image: url('${indexBackground}')`)) {
+      errors.push(`${file} missing relative background image ${indexBackground}`);
     }
 
     const expectedPreloads = isNotFound ? [notFoundBackground] : [indexBackground, ...navbarImagePreloads];

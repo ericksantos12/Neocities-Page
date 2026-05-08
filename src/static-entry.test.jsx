@@ -60,6 +60,13 @@ describe('static page rendering', () => {
     expect(postbuild).toContain('replace(/<link rel="preload" as="image"');
   });
 
+  it('renders not found documents without body background style', () => {
+    const postbuild = readFileSync('scripts/postbuild.mjs', 'utf8');
+
+    expect(postbuild).toContain('return \'\';');
+    expect(postbuild).toContain('body${bodyStyle ?');
+  });
+
   it('uses document navigation links in the navbar', () => {
     const html = renderPage('index.html').html;
 

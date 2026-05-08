@@ -42,7 +42,7 @@ function getPageImages(file) {
 
 function getBodyStyle(file) {
   if (file === 'not_found.html' || file === '404.html') {
-    return "background-image: url('./assets/majin.png')";
+    return '';
   }
 
   return "background-image: url('./assets/bg/cool_background.gif')";
@@ -70,7 +70,7 @@ ${styles}
     <script src="./js/site.js" defer></script>
     <title>${page.title} - Erick Santos</title>
   </head>
-  <body style="${bodyStyle}">
+  <body${bodyStyle ? ` style="${bodyStyle}"` : ''}>
     <div id="root">${html}</div>
   </body>
 </html>
