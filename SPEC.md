@@ -19,8 +19,8 @@ Migrar site estático `public/` para app React + Vite mantendo visual, conteúdo
 - I.web: páginas públicas servidas por browser.
 - I.routes: `/`, `/index.html`, `/mari.html`, `/guestbook.html`, `/about.html`, `/amandita.html`, `/not_found.html`.
 - I.assets: `public/assets/**`, ícones, gifs, favicon, mídia local.
-- I.css: 98.css CDN, `public/css/style.css`, `normalize.css`, `_navbar.css`, `_glitch-logo.css`.
-- I.js: `public/js/main.js`, `ageCalculator.js`, `slideshow.js` behavior migrado para React.
+- I.css: 98.css CDN, `src/styles/style.css`, `src/styles/navbar.css`, `src/styles/glitch-logo.css`, `public/css/normalize.css`.
+- I.js: React behavior in `src/components/AudioPlayer.jsx`, `src/components/Age.jsx`, `src/components/Slideshow.jsx`, `src/hooks/useEasterEgg.js`.
 - I.analytics: GoatCounter script `//gc.zgo.at/count.js`.
 - I.comments: HTML Comment Box em guestbook.
 - I.embeds: Spotify embeds, Catbox/Discord media, demais hotlinks.
