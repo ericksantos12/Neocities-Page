@@ -71,7 +71,7 @@ Migrar site `public/` para React + Vite gerando HTML estático multi-page, compa
 | T13 | x | Validar build, rotas, assets, embeds, mobile e links externos | V1,V2,V4,V5,V6,V7,I.embeds |
 | T14 | x | Remover HTML/JS legado só após equivalência validada | V2,V5,V8,V9,V10 |
 | T15 | x | Trocar arquitetura SPA copy-router por build multi-page real | V13,V16,I.routes,I.static |
-| T16 | . | Gerar HTML estático por página a partir de React obrigatório | V1,V2,V13,V16,I.static,I.cli |
+| T16 | x | Gerar HTML estático por página a partir de React obrigatório | V1,V2,V13,V16,I.static,I.cli |
 | T17 | . | Converter runtime necessário para JS clássico/inline ou progressive enhancement file-safe | V8,V9,V10,V14,V17,I.runtime |
 | T18 | . | Corrigir navbar para links `.html` documentais, incluindo Home `index.html` | V3,V15,I.routes |
 | T19 | . | Atualizar checks para validar Neocities HTTP e `file://` sobre `dist/*.html` | V1,V5,V11,V14,I.deploy,I.cli |
