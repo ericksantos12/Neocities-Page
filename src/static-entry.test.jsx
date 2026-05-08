@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { existsSync, readFileSync } from 'node:fs';
 import { renderPage } from './static-entry.jsx';
 
 describe('static page rendering', () => {
@@ -30,5 +31,11 @@ describe('static page rendering', () => {
     expect(html).toContain('href="guestbook.html"');
     expect(html).toContain('href="about.html"');
     expect(html).not.toContain('href="./"');
+  });
+
+  it('does not keep a client-side router entry', () => {
+    expect(existsSync('src/routes.js')).toBe(false);
+    expect(existsSync('src/App.jsx')).toBe(false);
+    expect(readFileSync('src/main.jsx', 'utf8')).toBe("import './styles/style.css';\n");
   });
 });

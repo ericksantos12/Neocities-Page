@@ -75,7 +75,7 @@ Migrar site `public/` para React + Vite gerando HTML estático multi-page, compa
 | T17 | x | Converter runtime necessário para JS clássico/inline ou progressive enhancement file-safe | V8,V9,V10,V14,V17,I.runtime |
 | T18 | x | Corrigir navbar para links `.html` documentais, incluindo Home `index.html` | V3,V15,I.routes |
 | T19 | x | Atualizar checks para validar Neocities HTTP e `file://` sobre `dist/*.html` | V1,V5,V11,V14,I.deploy,I.cli |
-| T20 | . | Remover dependência de router client-side para seleção de página no build final | V13,V16,I.static |
+| T20 | x | Remover dependência de router client-side para seleção de página no build final | V13,V16,I.static |
 
 ## §B
 | id | date | cause | fix |
