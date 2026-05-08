@@ -45,7 +45,7 @@ Migrar site estático `public/` para app React + Vite mantendo visual, conteúdo
 | id | status | task | cites |
 |---|---|---|---|
 | T1 | x | Auditar HTML/CSS/JS atual e mapear páginas para componentes React | V2,V3,I.web,I.routes |
-| T2 | . | Criar projeto Vite React sem perder assets existentes | V1,V5,I.assets,I.cli |
+| T2 | x | Criar projeto Vite React sem perder assets existentes | V1,V5,I.assets,I.cli |
 | T3 | . | Definir roteamento para URLs antigas e fallback 404 | V2,I.routes |
 | T4 | . | Migrar layout base, navbar e head/meta comuns | V3,V4,I.web,I.css |
 | T5 | . | Migrar estilos globais e imports CSS para pipeline Vite | V4,I.css |

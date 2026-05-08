@@ -2,7 +2,11 @@
   "name": "neocities-page",
   "version": "3.0.3",
   "description": "Este site foi criado com o intuito de ter um cantinho nesta comunidade, e também adquirir aprendizados sobre HTML e CSS",
-  "scripts": {},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ericksantos12/Neocities-Page.git"
@@ -15,6 +19,12 @@
   },
   "homepage": "https://github.com/ericksantos12/Neocities-Page#readme",
   "devDependencies": {
-    "htmlhint": "^1.1.4"
+    "@vitejs/plugin-react": "^4.7.0",
+    "htmlhint": "^1.1.4",
+    "vite": "^6.4.2"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   }
 }
