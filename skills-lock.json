@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "gitmoji-commits": {
+      "source": "deadbryam/gitmoji-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "aabe3bd93f1d18a1d436d6631f90240681dd7f85d0101caaeccc1e6f974723ca"
+    }
+  }
+}
